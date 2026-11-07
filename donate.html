@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+  <title>Donate — Muse AI Bypass</title>
+  <style>
+    .donation-hero { padding: 3.5rem 0 1.5rem; display:grid; grid-template-columns:1fr .75fr; gap:2rem; align-items:center; }
+    .donation-card { background:#fff; border:1px solid #e2e8f0; border-radius:22px; padding:1.35rem; box-shadow:0 12px 30px #0f172a0b; }
+    .donation-card h2 { margin-top:0; }
+    .payment-slot { margin-top:1rem; padding:1rem; border:1px dashed #cbd5e1; border-radius:16px; background:#f8fafc; min-height:54px; }
+    .payment-slot img { max-width:100%; height:auto; }
+    .payment-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; }
+    .fine-print { color:#64748b; font-size:.9rem; }
+    .gate { position:fixed; inset:0; z-index:100; display:grid; place-items:center; padding:1rem; background:#0f172acc; backdrop-filter:blur(12px); }
+    .gate[hidden] { display:none; }
+    .gate-panel { width:min(520px,100%); padding:2rem; background:#fff; border:1px solid #e2e8f0; border-radius:26px; box-shadow:0 30px 90px #0008; text-align:center; }
+    .gate-panel img { width:118px; height:118px; object-fit:cover; border-radius:28px; animation:float 4s ease-in-out infinite; }
+    .gate-actions { display:flex; justify-content:center; flex-wrap:wrap; gap:.7rem; margin-top:1.2rem; }
+    @media (max-width:800px) { .donation-hero,.payment-grid { grid-template-columns:1fr; } }
+  </style>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+<body>
+  <div class="gate" data-age-gate role="dialog" aria-modal="true" aria-labelledby="age-title">
+    <div class="gate-panel">
+      <img src="assets/promo-sticker.png" alt="Privacy raccoon mascot">
+      <span class="eyebrow">Donation desk</span>
+      <h1 id="age-title" style="font-size:2.2rem">Adults only, please.</h1>
+      <p>This page contains subscription and donation payment links. By continuing, you confirm that you are 18 or older and legally allowed to make payments in your location.</p>
+      <p class="fine-print">This is a self-attestation, not identity or age verification. Payment providers apply their own terms and checks.</p>
+      <div class="gate-actions"><button class="btn primary" type="button" data-age-enter>I'm 18+ — continue</button><button class="btn accent" type="button" data-age-leave>Leave page</button></div>
+    </div>
+  </div>
+
+  <nav class="nav"><div class="wrap nav-inner"><a class="brand" href="index.html"><img src="favicon.svg" alt="Symbol logo"> Muse AI Bypass</a><div class="navlinks"><a href="directory.html">Directory</a><a href="donate.html" aria-current="page">Donate</a><a href="safety.html">Safety</a><a href="deployment.html">Deploy</a><a class="nav-promo" href="ai-promos.html">AI Promos</a><a class="nav-auth" href="auth.html">Join / Sign In</a></div></div></nav>
+  <main>
+    <section class="wrap donation-hero">
+      <div><span class="eyebrow">Support the project</span><h1>Keep the raccoon <span class="gradient">fed.</span></h1><p class="lede">Choose any option below. Donations are optional, processed by the linked provider, and do not unlock access to private content or bypass any service restriction.</p><div class="notice"><strong>Payment safety:</strong> Confirm the destination and amount on the provider's own checkout UI before approving. Never send passwords, recovery codes, or private API keys.</div></div>
+      <img class="hero-art" src="assets/promo-badge.svg" alt="Public route donation badge">
+    </section>
+
+    <section class="wrap section payment-grid">
+      <article class="donation-card"><h2>PayPal subscription</h2><p>Recurring support through PayPal's hosted button.</p><div id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y" class="payment-slot"></div><script>
+        paypal.Buttons({
+          style: { shape: 'rect', color: 'gold', layout: 'vertical', label: 'subscribe' },
+          createSubscription: function(data, actions) {
+            return actions.subscription.create({ plan_id: 'P-4FD24238VX4902214NK2XP2Y', quantity: 1 });
+          },
+          onApprove: function(data) { alert('Thank you. Subscription ID: ' + data.subscriptionID); }
+        }).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y');
+      </script></article>
+
+      <article class="donation-card"><h2>GitHub Sponsors</h2><p>Support the project through GitHub's sponsorship flow.</p><div class="payment-slot"><iframe src="https://github.com/sponsors/Git-FED/button" title="Sponsor Git-FED" height="32" width="114" style="border:0;border-radius:6px"></iframe></div></article>
+
+      <article class="donation-card"><h2>Ko-fi</h2><p>Use the floating support button provided by Ko-fi.</p><div class="payment-slot"><p class="fine-print">The Ko-fi support bubble appears after the provider script loads.</p></div><script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script><script>kofiWidgetOverlay.draw('fedpromptly', {'type':'floating-chat','floating-chat.donateButton.text':'Support me','floating-chat.donateButton.background-color':'#00b9fe','floating-chat.donateButton.text-color':'#fff'});</script></article>
+
+      <article class="donation-card"><h2>Buy Me a Coffee</h2><p>One-time support with the supplied button.</p><div class="payment-slot"><a href="https://www.buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20book&emoji=%F0%9F%93%96&slug=fedpromptly&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a book on Buy Me a Coffee"></a></div></article>
+
+      <article class="donation-card"><h2>Crypto / Bitcoin</h2><p>Open the NOWPayments hosted payment page.</p><div class="payment-slot"><a href="https://nowpayments.io/payment/?iid=5997958570&source=button" target="_blank" rel="noreferrer noopener"><img src="https://nowpayments.io/images/embeds/payments-button-white.svg" alt="Cryptocurrency and Bitcoin payment button by NOWPayments"></a></div></article>
+
+      <article class="donation-card"><h2>Stripe</h2><p>Use the Stripe-hosted buy button.</p><div class="payment-slot"><stripe-buy-button buy-button-id="buy_btn_1UJKaaJaRf233kfWKZ81fcIe" publishable-key="pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8"></stripe-buy-button></div></article>
+    </section>
+
+    <section class="wrap section"><div class="donation-card"><h2>Before you pay</h2><ul><li>Verify the provider domain and payment details.</li><li>Use only a payment method you control.</li><li>Donations do not provide access to accounts, private content, or bypass techniques.</li><li>For provider-specific refunds or subscription changes, use the provider's own account controls.</li></ul><div class="actions"><a class="btn primary" href="index.html">Back home</a><a class="btn accent" href="safety.html">Review safety rules</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-shell"><div class="footer-sparkles" aria-hidden="true"></div><div class="footer-head"><a class="footer-brand" href="index.html"><img src="favicon.svg" alt="Symbol logo"> FED-OS ecosystem</a><p class="footer-kicker">tiny buttons · big orbit</p></div><div class="footer-grid"><section class="footer-group"><h3>Explore</h3><div class="footer-buttons"><a class="footer-btn" href="https://www.fedpromptly.org" target="_blank" rel="noopener noreferrer">Explore</a><a class="footer-btn" href="https://www.fedpromptly.com/aid" target="_blank" rel="noopener noreferrer">Join</a><a class="footer-btn" href="https://www.jabburr.com/fed-os" target="_blank" rel="noopener noreferrer">Store</a><a class="footer-btn" href="https://whop.com/fedpromptly/" target="_blank" rel="noopener noreferrer">Whop</a></div></section><section class="footer-group"><h3>Contact</h3><div class="footer-buttons"><a class="footer-btn email" href="mailto:contact@fedpromptly.com">General</a><a class="footer-btn email" href="mailto:support@fedpromptly.com">Support</a><a class="footer-btn email" href="mailto:business@fedpromptly.com">Business</a><a class="footer-btn email" href="mailto:careers@fedpromptly.com">Careers</a></div></section><section class="footer-group"><h3>Media & support</h3><div class="footer-buttons"><a class="footer-btn" href="https://www.patreon.com/c/FEDpromptly" target="_blank" rel="noopener noreferrer">Patreon</a><a class="footer-btn" href="https://buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Tips</a><a class="footer-btn" href="https://substack.com/@fedpromptly" target="_blank" rel="noopener noreferrer">Articles</a><a class="footer-btn" href="https://fedpromptly.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a><a class="footer-btn" href="https://gitfed.substack.com/" target="_blank" rel="noopener noreferrer">GitFed</a></div></section><section class="footer-group"><h3>Community</h3><div class="footer-buttons"><a class="footer-btn" href="https://discord.gg/Jm4XStx4Pf" target="_blank" rel="noopener noreferrer">Discord</a><a class="footer-btn" href="https://facebook.com/fedpromptly" target="_blank" rel="noopener noreferrer">Facebook</a><a class="footer-btn" href="https://bsky.app/profile/fed-os.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a><a class="footer-btn" href="https://x.com/Fedpromptly" target="_blank" rel="noopener noreferrer">X</a><a class="footer-btn" href="https://www.deviantart.com/fedpromptly" target="_blank" rel="noopener noreferrer">Art</a></div></section></div><div class="footer-bottom"><span>Muse AI Bypass · public links only · <span data-year></span></span><span><a href="about.html">About</a> · <a href="faq.html">FAQ</a> · <a href="donate.html">Donate</a></span></div></div></footer>
+  <script src="site.js"></script>
+</body>
+</html>

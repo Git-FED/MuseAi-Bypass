@@ -1,0 +1,29 @@
+
+/* Deep-space canvas: an original dark animated background for the whole static site. */
+html { background:#050712; }
+body { position:relative; isolation:isolate; overflow-x:hidden; color:#e5e7eb; background:#050712; }
+body::before { content:""; position:fixed; inset:-20%; z-index:-2; pointer-events:none; background:radial-gradient(ellipse at 18% 12%,#312e81aa 0%,transparent 28%),radial-gradient(ellipse at 82% 18%,#07598599 0%,transparent 25%),radial-gradient(ellipse at 52% 92%,#83184377 0%,transparent 30%),radial-gradient(ellipse at 50% 50%,#0f172a 0%,#050712 68%); filter:saturate(1.15); animation:spaceAurora 22s ease-in-out infinite alternate; }
+body::after { content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.32; background-image:linear-gradient(#8b5cf61c 1px,transparent 1px),linear-gradient(90deg,#22d3ee18 1px,transparent 1px),radial-gradient(circle at 20% 30%,#fff 0 1px,transparent 1.5px),radial-gradient(circle at 72% 64%,#a5f3fc 0 1px,transparent 1.5px),radial-gradient(circle at 44% 86%,#c4b5fd 0 1px,transparent 1.5px); background-size:72px 72px,72px 72px,181px 181px,233px 233px,311px 311px; mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 86%,transparent 100%); animation:spaceDrift 30s linear infinite; }
+body > * { position:relative; z-index:1; }
+.nav { background:#050712cc; border-bottom-color:#ffffff1c; }
+.navlinks a { color:#cbd5e1; }
+.navlinks a:hover { background:#ffffff12; color:#fff; }
+.brand { color:#f8fafc; }
+.eyebrow { color:#c4b5fd; }
+.lede { color:#cbd5e1; }
+h1,h2,h3 { color:#f8fafc; }
+.gradient { background-image:linear-gradient(100deg,#c4b5fd,#67e8f9,#f9a8d4,#c4b5fd); }
+.card { background:#0f172ae6; border-color:#ffffff1c; box-shadow:0 18px 44px #00000038, inset 0 1px #ffffff0c; }
+.card p { color:#cbd5e1; }
+.card:hover { border-color:#a78bfa99; }
+.pill { background:#083344; color:#a5f3fc; }
+.marquee { border-color:#ffffff1c; background:#0b1120cc; }
+.marquee-track { color:#cbd5e1; }
+.btn { border-color:#ffffff2b; }
+.btn.primary { background:#f8fafc; color:#111827; border-color:#f8fafc; }
+.btn.accent { background:#312e81cc; color:#ede9fe; border-color:#8b5cf6aa; }
+.notice { background:#2a1e0bcc; color:#fde68a; }
+.banner { box-shadow:0 18px 42px #00000045; }
+@keyframes spaceAurora { 0% { transform:translate3d(-2%, -1%, 0) scale(1); } 50% { transform:translate3d(2%, 2%, 0) scale(1.06); } 100% { transform:translate3d(-1%, 4%, 0) scale(1.12); } }
+@keyframes spaceDrift { from { background-position:0 0,0 0,0 0,0 0,0 0; } to { background-position:72px 144px,-72px 72px,181px -181px,-233px 233px,311px -311px; } }
+@media (prefers-reduced-motion:reduce) { body::before,body::after { animation:none; } }

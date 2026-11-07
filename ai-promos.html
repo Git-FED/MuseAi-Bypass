@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site.css">
+  <title>AI Promos — Muse AI Bypass</title>
+  <style>
+    .promo-page { padding:3.5rem 0 4rem; }
+    .promo-hero { position:relative; overflow:hidden; padding:2.5rem; border-radius:30px; color:#fff; background:linear-gradient(120deg,#111827,#312e81,#0891b2,#be185d); background-size:300% 300%; animation:promoFlow 12s ease infinite; box-shadow:0 24px 70px #312e8138; }
+    .promo-hero:after { content:"✦  ✧  ✦  ✧  ✦"; position:absolute; right:2rem; top:1rem; color:#fef3c7; font-size:2rem; letter-spacing:1rem; opacity:.6; animation:promoTwinkle 3s ease-in-out infinite alternate; }
+    .promo-hero h1 { max-width:12ch; margin:.8rem 0; }
+    .promo-hero p { max-width:62ch; color:#e0e7ff; }
+    .promo-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:1.5rem; }
+    .promo-card { position:relative; overflow:hidden; display:flex; flex-direction:column; min-height:290px; padding:1.35rem; border:1px solid #ffffff2b; border-radius:24px; background:#ffffffed; box-shadow:0 14px 32px #0f172a12; transition:transform .25s ease, box-shadow .25s ease; }
+    .promo-card:before { content:""; position:absolute; width:180px; height:180px; right:-70px; top:-70px; border-radius:50%; background:var(--promo-accent,#8b5cf6); opacity:.2; filter:blur(4px); }
+    .promo-card:hover { transform:translateY(-8px) rotate(-.5deg); box-shadow:0 24px 48px #312e8230; }
+    .promo-card h2 { position:relative; margin:.2rem 0 .4rem; letter-spacing:-.04em; }
+    .promo-card p { position:relative; color:#475569; }
+    .promo-meta { display:flex; align-items:center; gap:.5rem; color:#64748b; font-size:.78rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
+    .promo-icon { display:grid; place-items:center; width:52px; height:52px; border-radius:17px; background:var(--promo-accent,#8b5cf6); color:#fff; font-size:1.55rem; box-shadow:0 8px 20px #0f172a25; animation:promoBob 4s ease-in-out infinite; }
+    .promo-code { position:relative; display:flex; align-items:center; justify-content:space-between; gap:.5rem; margin-top:auto; padding:.7rem .8rem; border:1px dashed #94a3b8; border-radius:14px; background:#f8fafc; }
+    .promo-code code { color:#111827; font:800 1.05rem ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.08em; }
+    .copy-code { cursor:pointer; border:1px solid #c4b5fd; border-radius:10px; padding:.5rem .7rem; color:#5b21b6; background:#ede9fe; font-weight:850; }
+    .copy-code:hover { background:#ddd6fe; }
+    .promo-actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1rem; }
+    .promo-disclaimer { margin-top:1.4rem; color:#64748b; font-size:.88rem; }
+    .copy-status { min-height:1.3em; margin:.4rem 0 0; color:#047857; font-size:.82rem; font-weight:750; }
+    @keyframes promoFlow { 0%,100%{background-position:0 50%} 50%{background-position:100% 50%} }
+    @keyframes promoTwinkle { from{transform:translateY(0) rotate(-4deg);opacity:.35} to{transform:translateY(8px) rotate(4deg);opacity:.9} }
+    @keyframes promoBob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+    @media (max-width:800px) { .promo-grid { grid-template-columns:1fr; } .promo-hero { padding:1.7rem; } }
+    @media (prefers-reduced-motion:reduce) { .promo-hero,.promo-hero:after,.promo-icon { animation:none; } .promo-card { transition:none; } .promo-card:hover { transform:none; } }
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap nav-inner"><a class="brand" href="index.html"><img src="favicon.svg" alt="Symbol logo"> Muse AI Bypass</a><div class="navlinks"><a href="directory.html">Directory</a><a href="donate.html">Donate</a><a href="safety.html">Safety</a><a href="deployment.html">Deploy</a><a class="nav-promo" href="ai-promos.html" aria-current="page">AI Promos</a><a class="nav-auth" href="auth.html">Join / Sign In</a></div></div></nav>
+  <main class="wrap promo-page">
+    <section class="promo-hero"><span class="eyebrow" style="color:#fef3c7">Invite orbit</span><h1>Good tools are better with friends.</h1><p>Explore the invite codes and referral links supplied for Muse, Manus AI, and Teamily. Tap a code to copy it, then redeem it in the provider's own settings or credits center.</p><div class="actions"><a class="btn" style="background:#fff;color:#312e81;border-color:#fff" href="index.html">Back home</a><a class="btn" style="color:#fff;border-color:#ffffff66" href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Open Muse ↗</a></div></section>
+    <section class="promo-grid">
+      <article class="promo-card" style="--promo-accent:#8b5cf6"><div class="promo-meta"><span class="promo-icon">✦</span> Muse · primary invite</div><h2>Your personal AI agent</h2><p>Redeem the code in Settings within 48 hours of joining. The supplied promotion says both people receive 1 billion Muse tokens.</p><div class="promo-code"><code>5F2V31</code><button class="copy-code" type="button" data-copy="5F2V31">Copy code</button></div><p class="copy-status" aria-live="polite"></p><div class="promo-actions"><a class="btn primary" href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Join Muse ↗</a></div></article>
+      <article class="promo-card" style="--promo-accent:#f97316"><div class="promo-meta"><span class="promo-icon">M</span> Manus AI</div><h2>Manus invite code</h2><p>Use the supplied invite code when joining Manus AI. No redemption URL was provided, so this card only copies the code.</p><div class="promo-code"><code>G3ADN</code><button class="copy-code" type="button" data-copy="G3ADN">Copy code</button></div><p class="copy-status" aria-live="polite"></p><div class="promo-actions"><a class="btn primary" href="https://manus.im" target="_blank" rel="noopener noreferrer">Open Manus ↗</a></div></article>
+      <article class="promo-card" style="--promo-accent:#06b6d4"><div class="promo-meta"><span class="promo-icon">◈</span> Teamily</div><h2>Human + agent workspace</h2><p>Join the human-agent platform. Redeem the code in Settings → Credits Center to receive the supplied 5 CREDITS promotion.</p><div class="promo-code"><code>2U6Q8D</code><button class="copy-code" type="button" data-copy="2U6Q8D">Copy code</button></div><p class="copy-status" aria-live="polite"></p><div class="promo-actions"><a class="btn primary" href="https://teamily.ai/i/2U6Q8D" target="_blank" rel="noopener noreferrer">Join Teamily ↗</a></div></article>
+      <article class="promo-card" style="--promo-accent:#ec4899"><div class="promo-meta"><span class="promo-icon">✦</span> Muse · second account</div><h2>Another Muse invite</h2><p>A second supplied Muse code with the same stated 48-hour Settings redemption window and token promotion.</p><div class="promo-code"><code>0A0K7R</code><button class="copy-code" type="button" data-copy="0A0K7R">Copy code</button></div><p class="copy-status" aria-live="polite"></p><div class="promo-actions"><a class="btn primary" href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Join Muse ↗</a></div></article>
+    </section>
+    <p class="promo-disclaimer">Referral offers, eligibility, expiration dates, token values, and credit terms are controlled by the providers. Verify the current offer on the provider's own page before relying on it. Muse AI Bypass does not process these referrals.</p>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-shell"><div class="footer-sparkles" aria-hidden="true"></div><div class="footer-head"><a class="footer-brand" href="index.html"><img src="favicon.svg" alt="Symbol logo"> FED-OS ecosystem</a><p class="footer-kicker">tiny buttons · big orbit</p></div><div class="footer-bottom"><span>Muse AI Bypass · public links only · <span data-year></span></span><span><a href="about.html">About</a> · <a href="faq.html">FAQ</a> · <a href="donate.html">Donate</a></span></div></div></footer>
+  <script src="site.js"></script>
+  <script>
+    document.querySelectorAll('[data-copy]').forEach(function(button) {
+      button.addEventListener('click', async function() {
+        var code = button.getAttribute('data-copy');
+        var status = button.closest('.promo-card').querySelector('.copy-status');
+        try { await navigator.clipboard.writeText(code); status.textContent = 'Copied ' + code + ' — paste it in the provider settings.'; button.textContent = 'Copied'; }
+        catch (e) { status.textContent = 'Copy unavailable. Select this code manually: ' + code; }
+        setTimeout(function(){ button.textContent = 'Copy code'; }, 1800);
+      });
+    });
+  </script>
+</body>
+</html>
