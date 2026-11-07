@@ -1,0 +1,890 @@
+2:13 AM
+Muse AI Bypass — file tree only, no build yet.
+
+
+
+Muse-AI-Bypass/
+├── README.md
+├── clients/
+│   ├── web/
+│   │   ├── README.md
+│   │   ├── bypass-web-client.md
+│   │   └── index.html
+│   ├── windows/
+│   │   ├── README.md
+│   │   └── bypass-windows-client.md
+│   ├── android/
+│   │   ├── README.md
+│   │   └── bypass-android-client.md
+│   └── shared/
+│       ├── README.md
+│       └── bypass-core.md
+├── bypass/
+│   ├── firewalls.md
+│   ├── ad-blockers.md
+│   ├── geo-blocks.md
+│   ├── trackers.md
+│   └── other-blocks.md
+├── docs/
+│   ├── how-it-works.md
+│   ├── setup.md
+│   └── faq.md
+└── LICENSE.md
+
+
+muse-ai-bypass-file-tree.md
+MD
+4:25 AM
+You:
+send workers out to find a list of web clients than add to the file tree
+
+4 workers out:
+
+firewalls
+ad-blockers + trackers
+geo-blocks, paywalls + other blocks
+general web proxies / unblockers
+Each finding real web clients with links. I'll add the list to the file tree when they report back.
+
+Done. 4 workers back, 36 unique web clients, deduplicated. Added to the tree as clients/web/web-clients.md.
+
+
+
+Muse-AI-Bypass/
+├── README.md
+├── clients/
+│   ├── web/
+│   │   ├── README.md
+│   │   ├── bypass-web-client.md
+│   │   ├── web-clients.md
+│   │   └── index.html
+│   ├── windows/
+│   │   ├── README.md
+│   │   └── bypass-windows-client.md
+│   ├── android/
+│   │   ├── README.md
+│   │   └── bypass-android-client.md
+│   └── shared/
+│       ├── README.md
+│       └── bypass-core.md
+├── bypass/
+│   ├── firewalls.md
+│   ├── ad-blockers.md
+│   ├── geo-blocks.md
+│   ├── trackers.md
+│   └── other-blocks.md
+├── docs/
+│   ├── how-it-works.md
+│   ├── setup.md
+│   └── faq.md
+└── LICENSE.md
+Breakdown in the list: 12 firewalls, 10 ad-blockers/trackers, 5 geo/paywall, 9 general proxies. Excluded dead ones: 12ft.io, Nitter, Whoogle.
+
+
+
+web-clients.md
+MD
+You:
+You deleted a message
+
+Sorry, I can’t help you with this request right now. Is there anything else I can help you with?
+
+You:
+?
+
+Done. 36 web clients in the tree, under clients/web/web-clients.md.
+
+You:
+add this
+
+Done. Added as clients/web/browser-clients-simple.md — 92 clients, 11 sections, copied as-is. Original untouched.
+
+
+
+Muse-AI-Bypass/
+├── README.md
+├── clients/
+│   ├── web/
+│   │   ├── README.md
+│   │   ├── bypass-web-client.md
+│   │   ├── web-clients.md
+│   │   ├── browser-clients-simple.md
+│   │   └── index.html
+│   ├── windows/
+│   │   ├── README.md
+│   │   └── bypass-windows-client.md
+│   ├── android/
+│   │   ├── README.md
+│   │   └── bypass-android-client.md
+│   └── shared/
+│       ├── README.md
+│       └── bypass-core.md
+├── bypass/
+│   ├── firewalls.md
+│   ├── ad-blockers.md
+│   ├── geo-blocks.md
+│   ├── trackers.md
+│   └── other-blocks.md
+├── docs/
+│   ├── how-it-works.md
+│   ├── setup.md
+│   └── faq.md
+└── LICENSE.md
+
+Muse AI Bypass — GitHub File Tree
+Muse-AI-Bypass/
+├── README.md
+├── clients/
+│   ├── web/
+│   │   ├── README.md
+│   │   ├── bypass-web-client.md
+│   │   ├── web-clients.md
+│   │   ├── browser-clients-simple.md
+│   │   └── index.html
+│   ├── windows/
+│   │   ├── README.md
+│   │   └── bypass-windows-client.md
+│   ├── android/
+│   │   ├── README.md
+│   │   └── bypass-android-client.md
+│   └── shared/
+│       ├── README.md
+│       └── bypass-core.md
+├── bypass/
+│   ├── firewalls.md
+│   ├── ad-blockers.md
+│   ├── geo-blocks.md
+│   ├── trackers.md
+│   └── other-blocks.md
+├── docs/
+│   ├── how-it-works.md
+│   ├── setup.md
+│   └── faq.md
+└── LICENSE.md
+
+# LIST 2 — Browser refresh, 2026-11-07
+## Existing clients / frontends / official APIs — refreshed, browser-usable
+
+Research only. No clients built, no signup, no login, no posting, no purchase, no account creation. No client building starts until Git-FED picks one.
+Refresh of `02-existing-clients.md` (Nov 1, 2026, ~120 entries), re-checked Nov 7, 2026 by 11 category workers. This file ADDS to that list — it does NOT overwrite it. Do not delete the Nov 1 file.
+
+Risk key: LOW = official/licensed, use within its terms. MEDIUM = unofficial/third-party, breaks without notice, check licence/ToS. HIGH = circumvents a block or ToS; listed for completeness, NOT recommended as a compliant route.
+Status key: VERIFIED = a Nov 7, 2026 search returned a source confirming it; UNVERIFIED = not re-checked / no live test returned — do not claim live. DEAD = confirmed dead/retired in this refresh, retained for the record, do not use.
+Read-only / public content first. No entry here authorises bypassing a login, stealing credentials, evading a paid API, or breaking terms for account access. Gates (login, paywall, CAPTCHA, DRM, MFA) are hard stops.
+
+## Summary — counts
+
+Counts are the sums of the 11 worker-reported category returns. Counting bases differ slightly between workers (some count grouped bullets, some count sub-entries), and the same client can appear in more than one category (e.g. Discord, TikTok, Twitch). Totals below are sums of category returns, NOT a deduplicated unique-client count.
+
+| Category | Carried live | Carried dead / degraded | New added | UNVERIFIED flags | Entries in return |
+|---|---|---|---|---|---|
+| 1. Reddit & forums | 8 | 1 degraded, 1 superseded | 24 | 5 | 34 |
+| 2. Social | 10 | 4 | 31 (incl. 1 new dead) | 22 | 54 |
+| 3. Video / music / streaming | 13 | 1 | 12 | 8 | 26 |
+| 4. Finance / banks / payments / crypto | 11 | 0 | 16 | 4 | 27 |
+| 5. News / paywalls / search | 30 | 5 | 20 (13 live, 1 dead, 6 UNVERIFIED) | 7 | 56 |
+| 6. Shopping / marketplaces / travel | 18 | 4 | 8 | 6 | 30 |
+| 7. Developer / AI / cloud | 10 | 0 | 12 | 5 | 22 |
+| 8. Government / courts / health / utilities | 21 | 0 | 10 | 2 | 31 |
+| 9. Messaging / creator | 15 (+1 confirmed-none) | 0 | 12 | 1 | 28 |
+| 10. Gaming / sports / betting / entertainment | 15 of 17 | 0 full (1 sub-endpoint dead) | 23 | 6 | 40 |
+| 11. Jobs / housing / education / local / dating | 9 of 10 grouped | 0 full (2 dead sub-components) | 14 | 6 | 24 |
+| **TOTAL (sum of returns)** | **~160** | **~15 dead/degraded** | **~182** | **~72** | **~372** |
+
+- Carried over from Nov 1: ~175 entries reviewed; ~160 still live, ~15 dead/degraded, plus corrections (changed terms, retired sub-endpoints, superseded entries) noted per category below.
+- New since Nov 1: ~182 entries added (including confirmed-dead historical entries kept so they are not re-added, and confirmed-gap entries where no route exists).
+- UNVERIFIED: ~72 flags — mostly carried entries not re-searched in this sweep, fragile frontends whose instances die frequently, and new vendor/aggregator claims with no live test. Re-check live before relying on any of them, especially Invidious/Piped/Redlib/Nitter instances, Instagram/TikTok viewers, and third-party scraper APIs.
+- No Prism News (prismnews.com) used anywhere in this refresh — banned source. No Redlib instance was pinged directly (search results only, per standing rule). No Cloudflare workers.dev URL is listed as a client; two flags only: FxEmbed runs as a Cloudflare Worker (public faces fxtwitter.com / fixupx.com), and a Floci source arrived via a workers.dev mirror and was excluded — no URL listed for it.
+
+## Top 10 most useful browser clients (VERIFIED, lowest-risk first)
+
+1. **Bluesky Public AT Protocol API** — `https://public.api.bsky.app` — public profiles, author feeds, posts, keyword search; no login, no key. LOW. VERIFIED. Caveat: unauthenticated `searchPosts` capped at 100/query, cursor paging returns 403.
+2. **Stack Exchange API v2.3** — `https://api.stackexchange.com/2.3/` — questions/answers/comments/search across all SE sites; no login for reads (300 req/day/IP anonymous, 10,000/day with free key). LOW. VERIFIED Oct 30, 2026. New: official MCP server beta.
+3. **Hacker News Firebase + Algolia APIs** — `https://hacker-news.firebaseio.com/v0/` ; `https://hn.algolia.com/api/v1/` — stories, items, comments, full-text search; no login, no key. LOW. VERIFIED (live-tested Oct 14 and Oct 22, 2026).
+4. **CourtListener + RECAP** — `https://www.courtlistener.com/api/rest/v4` — federal dockets/opinions, 9M+ opinions; free web search, no login; API needs free account. LOW. VERIFIED. Note: free API limits tightened May 2026 (5 req/min, 50/hr, 125/day; membership from $10/mo raises it).
+5. **Google News RSS** — `https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en` and `https://news.google.com/rss/search?q=<query>&hl=en-US&gl=US&ceid=US:en` — top stories / any search, site-limited feeds (incl. Reuters/AP workaround, whose own RSS is dead). No key, no login. LOW for headlines, MEDIUM if abused; unofficial. VERIFIED Oct 2026 (38 items top stories, all last 24h).
+6. **YouTube Data API v3 + oEmbed** — `https://developers.google.com/youtube/v3` ; `https://www.youtube.com/oembed` — public metadata; oEmbed needs no key. LOW. VERIFIED. (Playback/download is a different, gated matter — see §3.)
+7. **GitHub CLI + official REST/GraphQL** — `https://api.github.com` — repos, issues, PRs, search, releases; 60 req/hr unauthenticated, 5,000/hr with token. LOW. VERIFIED (gh 2.50.0, Apr 2026).
+8. **Ticketmaster Discovery API** — `https://app.ticketmaster.com/discovery/v2/` — 230,000+ events, venues, artists, on-sale dates, buy links; free key, 5,000 calls/day. LOW. VERIFIED Nov 3, 2026. Price ranges now almost always null (only 3 of 4,000+ events pulled Oct 2026 had one).
+9. **Polymarket Gamma API** — `https://gamma-api.polymarket.com` — market/event metadata, prices, history; no auth for reads. LOW. VERIFIED. Plus CLOB API `https://clob.polymarket.com` for public order books. Read-only use only.
+10. **Redlib** — `https://redlib-1.privadency.com` (also redlib.catsarch.com, redlib.freedit.eu, redlib.matthew.science) — read-only Reddit posts/comments/subreddits/search, no login. HIGH — circumvents Reddit blocks/ToS, instances run by unknown operators, never send credentials. VERIFIED working Oct 27, 2026, but fragile and time-limited: Reddit RSS dies Nov 13, 2026, logged-in-only tests start Q4 2026 outside the US, all public API ends March 2027.
+
+## What was verified vs UNVERIFIED
+
+- VERIFIED in this refresh: the great majority of carried-over official APIs (Bluesky, Stack Exchange, Hacker News, Lemmy, GitHub, GitLab, Twitch Helix, Vimeo, Spotify, SoundCloud v1/v2, Stripe, PayPal, exchange APIs, CourtListener, govinfo, CMS/FDA/CDC open data, USPS new APIs, EIA — now VERIFIED, was UNVERIFIED Nov 1) and the new official routes (Claude Personal Finance via Plaid Nov 5, 2026; Robinhood Agentic Trading MCP; PayPal/Stripe/Square/Coinbase/Kraken/Bybit/OKX official MCPs; Substack Developer API + MCP; Dailymotion Data API; Apple Music API; Congress.gov; Oyez; GOG Catalog API v2; Epic Free Games feed; JustWatch/Trakt/Reelgood — now VERIFIED).
+- UNVERIFIED (~72 flags): carried entries not re-searched (e.g. IGDB/RAWG, balldontlie, SportsDataIO/Goalserve/API-Sports, amodb, TikTok Research API, Facebook paid scraper APIs, TwitterViewer, FinchView, Pictame, Amazon SP-API, Rainforest/Oxylabs/Bright Data group, AirDNA group, NetNewsWire, Coursera/Udemy post-merger API status, Nextdoor Apify actor liveness), fragile frontends (Invidious/Piped instances, Hyperpipe, Materialious, CloudTube, PokeTube, Morphe, SmartTube, invidious.f5.si, Rumble wrappers, PinkLib, Raddle, Poal, Priviblur, Tumblr viewers, Misskey/Pleroma/PeerTube instance health, Snapchat viewers, multi-platform aggregators), and new vendor claims with no live test (Binance Agent OS MCP, Schwab MCP/Charley as an external route, Venmo approved-API scope, Morgan Stanley retail API — no route found, DocketRadar, Healthcare.gov `marketplace-int` API, Gmail MCP server — preview only, AI-agent marking required from Nov 11, 2026, FiveFilters Full-Text RSS, paywall-bypass sites RemovePaywalls.com / PaywallBuster / Bye Bye Paywall / 13ft / Incoggo).
+- No live-browser verification was done in this research (subagent restriction); search results do not establish live availability, current quotas, or current instance health — especially for fragile frontends, which die frequently. Re-check live before relying on any of them.
+
+## Sites with no usable browser client (short list)
+
+- **Dating (Tinder, Bumble, Hinge)** — no legitimate public alternative; 2026 terms explicitly ban AI/third-party tools; unofficial clients are login + ToS-violating, NOT recommended.
+- **OnlyFans** — no public API, no developer portal, no keys (verified absence); third-party vendors exist (HIGH, NOT recommended).
+- **Fansly** — no public API either (confirmed via CreatorAPI source).
+- **Nextdoor** — no sanctioned route, no official API; only narrow third-party scrapers of public SEO pages (ParseBird/ParseForge/Apify actor, HIGH).
+- **SVOD playback (Netflix, Disney+, Hulu, Peacock, Max, Paramount+, Discovery+, Prime Video, Apple TV+)** — no legitimate read-only frontend/mirror; playback = paid account + DRM player. Metadata only via TMDB/JustWatch/Trakt/Reelgood.
+- **Banks / IRS personal / SSA / VA / My HealtheVet / patient charts** — login-only by design; no agent-login alternative. Only consumer-permissioned aggregators (Plaid/Yodlee/Finicity/Akoya/MX) and official APIs count, and the agent never holds the user's password. JPMorgan/Chase said Oct 15, 2026 it will block outside AI agents logging in with credentials; Citi and BofA similar.
+- **Morgan Stanley retail** — no public retail API found; aggregators only.
+- **Rotten Tomatoes** — no public API; OMDb is the only lawful route for RT scores.
+- **LinkedIn Jobs / Snapchat / Pinterest** — no credible Redlib-style frontend found; official routes are permissioned/own-account APIs only.
+- **Chegg / ZipRecruiter / Monster / CareerBuilder / Trulia / CoStar / Apartments.com** — no public job/housing API found (boards/sites themselves live; see §11 for the licensed/aggregator substitutes).
+- **Roblox account/library, Epic account/library, PlayStation/Xbox account data (trophies, library, purchase history)** — no public route; catalog-only wrappers exist.
+- **Quora** — gap now partially closed by Quetre (HIGH, fragile, development stalled) — see §1.
+- **Craigslist** — native RSS is DEAD (see §6); only third-party feed generator Open RSS (MEDIUM) and the posting-only Bulk Posting API remain.
+- **WhatsApp / Signal personal accounts** — no legitimate public mirror/frontend; official routes are business/bot APIs or unofficial linked-device clients (HIGH for unofficial).
+
+---
+
+## 1. Reddit & forums
+
+### Carried over — live (8)
+- **Reddit → Redlib** — redlib-1.privadency.com; redlib.catsarch.com; redlib.freedit.eu; redlib.matthew.science (official instance). Read-only posts/comments/subreddits/search, no login, no posting. HIGH. VERIFIED working Oct 27, 2026 (Greycoder); v0.40.0 released Oct 22, 2026. Threat: Reddit announced Oct 29, 2026 a move to logged-in-only, tests Q4 2026 outside US; RSS ends Nov 13, 2026; unregistered apps cut off Jan 12, 2027; all public API ends March 2027.
+- **Reddit → Official Data API (legacy)** — approved/registered OAuth apps only. LOW if approved, sunsetting (timeline above). VERIFIED.
+- **Stack Overflow / Stack Exchange → Stack Exchange API v2.3** — api.stackexchange.com/2.3/. Questions/answers/comments/search; no login for reads (300/day/IP anonymous, 10,000/day with free key). LOW. VERIFIED Oct 30, 2026. New: official MCP server beta at mcp.stackoverflow.com (sign-in, 100 calls/day/user).
+- **4chan → Official JSON API** — a.4cdn.org. Boards/catalog/threads, no login; 1 req/sec, 10+ sec thread polls, If-Modified-Since; CORS forces server-side proxy; search Cloudflare-blocked. LOW-MEDIUM. VERIFIED.
+- **Hacker News → Firebase API + Algolia API** — hacker-news.firebaseio.com/v0/; hn.algolia.com/api/v1/. No login, no key; Algolia ~10,000 req/hr/IP. LOW. VERIFIED (live-tested Oct 14 and Oct 22, 2026).
+- **Lemmy → Federated /api/v3/** — per-instance `https://<instance>/api/v3/`; unauthenticated GETs open by design. LOW. VERIFIED; lemmy.world ~200,000 accounts, ~12,600 monthly active (Oct 19, 2026).
+- **Discord → Official Bot API + Gateway + webhooks** — docs.discord.com/developers/bots/overview (updated Oct 27, 2026). Bots in invited servers only. LOW if compliant. Change: since Jun 10, 2026 privileged-intent review threshold is 10,000 unique users (not 100 servers), yearly reapplication. Self-bots HIGH, no public mirror. VERIFIED.
+- **Nextdoor → NO sanctioned route** — verified negative finding still holds; ParseBird claim remains UNVERIFIED. HIGH for any scraper.
+
+### Carried over — dead / degraded / superseded
+- **4chan → 4plebs archive, archived.moe — DEGRADED / effectively dead for automated access.** archive.4plebs.org; archived.moe. Both now return Cloudflare managed challenges to automated access ("still 403 on every path", Oct 2026). Replacement: Desuarchive + Palanq (below). MEDIUM.
+- **Quora → "NO verified alternative" — SUPERSEDED** by Quetre (below). Do not carry the old line forward.
+
+### New added (24)
+- **Reddit → SafeReddit (Redlib instance)** — safereddit.com. Same as Redlib. HIGH. VERIFIED as listed, DEGRADED ("usually reliable but recently failing", Oct 27, 2026).
+- **Reddit → LibRedirect (browser extension)** — Firefox add-on v3.4.0 (Jul 24, 2026). Auto-redirects Reddit → Redlib (and YouTube → Invidious/Piped). No login. MEDIUM. VERIFIED.
+- **Reddit → RedReader (Android)** — github.com/QuantumBadger/RedReader. Browse logged-out, no subscription, no own API key; posting/voting need login. LOW-MEDIUM. VERIFIED. (Reddit granted a non-commercial accessibility exemption in 2023; "has a habit of breaking these clients eventually".)
+- **Reddit → Infinity for Reddit+ (Android)** — github.com/Docile-Alligator/Infinity-For-Reddit. Anonymous browsing free; login/sync needs paid subscription ($2.99–$9.99). MEDIUM. VERIFIED (Play listing updated Oct 23, 2026; recent reports of 403s/load failures).
+- **Reddit → Old Reddit — DEAD for logged-out use.** old.reddit.com — login required since July 2026; from Sep 30, 2026 limited to accounts that used it in the past six months, moderators exempt. Hard stop: login gate.
+- **Reddit → PinkLib (C++ Redlib fork) — UNVERIFIED.** github.com/bin4ort/pinklib.cpp (created Aug 2, 2026). No public instance URL found — do not invent one. HIGH.
+- **PieFed** — piefed.social (flagship; just under 7,000 accounts mid-Oct 2026). Federated forum, federates with Lemmy/Mbin. Reads public. LOW. VERIFIED.
+- **Mbin** — flagship fedia.io (instance URL UNVERIFIED, platform VERIFIED). Federated aggregator (kbin successor), federates with Lemmy/PieFed/Mastodon. LOW.
+- **Discuit** — discuit.net. Centralised Reddit-shaped site, non-profit, no ads/tracking; read without an account. LOW. VERIFIED.
+- **Tildes** — tildes.net. Non-profit, no-ads; registration invite-only (hard stop for new accounts). LOW. VERIFIED.
+- **Lobsters** — lobste.rs. Computing-focused, invite-only. LOW. VERIFIED.
+- **MetaFilter** — metafilter.com. Community weblog since 1999; $5 one-time to join (reads public). LOW. VERIFIED.
+- **Raddle — UNVERIFIED.** raddle.me. Reddit-like, privacy-focused, niche/political lean. LOW-MEDIUM.
+- **Poal — UNVERIFIED.** poal.co. Free-speech link/comment aggregation. LOW-MEDIUM.
+- **4chan → Desuarchive (FoolFuuka)** — desuarchive.org. Archived threads, full-text search, keyless JSON API (`/_/api/chan/*`); 22 boards. No login. MEDIUM. VERIFIED (200s, Oct 2026).
+- **4chan → Palanq archive (FoolFuuka)** — archive.palanq.win. /news/ board archive, same JSON API. No login. MEDIUM. VERIFIED.
+- **Quora → Quetre** — quetre.iket.me/ (also qr.vern.cc/, quetre.tokhmi.xyz/); codeberg.org/zyachel/quetre. Libre Quora frontend: answers without ads/trackers/login; unofficial JSON API by appending `/api/v1/`. No login. HIGH, fragile — development stalled (no commits in 26 weeks, last commit ~12mo ago, latest release v8.0.0 2.6y ago). VERIFIED as listed, not live-tested for content fetch.
+- **Discourse forums → .json / search.json + official MCP** — any public Discourse forum: `/t/{id}.json`, `/search.json?q=…`, `/categories.json`; public reads need no key where anonymous search allowed. Official Discourse MCP server (github.com/discourse/discourse-mcp, read-only by default, User API Keys, 20 req/min). LOW if per-forum rules honoured. VERIFIED.
+- **Flarum forums → REST API + public pages** — flarum.org. Self-hosted open-source forum (MIT); public discussions are indexable pages; documented REST API. LOW-MEDIUM (per-forum). VERIFIED as software; per-instance liveness varies.
+- **phpBB / vBulletin public forums — UNVERIFIED (pattern only).** No unified API; public forums are ordinary readable pages, many expose per-forum RSS. MEDIUM. Do not present as a working client.
+- **Nextdoor → ParseForge "Nextdoor Marketplace Scraper" (Apify actor)** — parseforge.co/a/nextdoor-marketplace-scraper/ (updated Sep 30, 2026). Public For Sale & Free listings only (city/neighbourhood SEO pages); NOT feeds/groups/private data. No login for the public surface; Apify account needed. HIGH. VERIFIED as listed.
+- **Teddit — DEAD.** teddit.net (TLS fails 2026); killed Aug 1, 2023 by Reddit API pricing/429s; last push Jul 31, 2023.
+- **Saidit — DEAD.** saidit.net — wholly down, backend failure late 2025; domain expires Jan 13, 2027 but site down.
+- **Voat — DEAD.** voat.co — dissolved Dec 25, 2020. No successor verified.
+- **Ruqqus — DEAD.** ruqqus.com — dissolved Oct 6, 2021. No successor verified (UNVERIFIED gap).
+
+---
+
+## 2. Social (X, Instagram, TikTok, Bluesky, Mastodon, Threads, LinkedIn, Snapchat, Pinterest)
+
+### Carried over — live (10)
+- **Bluesky → Public AT Protocol API** — public.api.bsky.app. Profiles, author feeds, posts, keyword search; no login, no key. LOW. VERIFIED (Nov 2, 2026). Search ceiling: unauthenticated `searchPosts` capped at 100/query, cursor paging returns 403.
+- **Mastodon → Instance public API + RSS** — `<profile>.rss` on most instances; public profiles/posts are ordinary web pages. LOW. VERIFIED (open by design).
+- **X → Official X API** — developer.x.com. Pay-per-use from Feb 6, 2026 ($0.015/post, $0.20/post with a URL, per one source). LOW if compliant; Automated label + prior approval for AI reply bots. VERIFIED.
+- **X → FxTwitter / vxTwitter (FixUpX)** — api.fxtwitter.com, api.vxtwitter.com. Single post / single user only; full tweet JSON incl. media; no search/timelines/replies/trends. No login. HIGH. VERIFIED (Oct 7, 2026 curl test). Flag: FxEmbed runs as a Cloudflare Worker; public faces fxtwitter.com / fixupx.com — no workers.dev URL listed.
+- **X → Syndication / oEmbed** — cdn.syndication.twimg.com/tweet-result; publish.twitter.com/oembed. Single post only. No login. MEDIUM. VERIFIED Oct 2026.
+- **X → TwStalker — VERIFIED, DOWNGRADED.** twstalker.co.uk — now only sample trends + popular-profile directory; search opens the profile/search on X in a new tab, no tweets/replies/media load on-page (site's own Nov 5, 2026 page). MEDIUM-HIGH.
+- **Instagram / Facebook / Threads → Meta official APIs** — graph.facebook.com, graph.instagram.com, graph.threads.net. Own-account / permissioned Pages only; no general public-profile read (Basic Display API retired Dec 4, 2024). LOW if compliant, narrow. VERIFIED (Graph v25.0 Feb 18, 2026; v26.0 Jul 29, 2026).
+- **Instagram → Imginn — VERIFIED, FLAKY.** imginn.com (imginn.org = Cloudflare 403; imginn.io/.app parked). Public profiles/posts/reels/stories/downloads; private accounts unreachable. No login. HIGH. Homepage up Nov 4, 2026; searches intermittently Cloudflare-blocked / empty from Instagram rate-limiting.
+- **Threads → Third-party Threads APIs (ReefAPI, SocialCrawl)** — reefapi.com/threads-api. Public profile/posts/replies/search (recent window only); followers/following/likes NOT available. Vendor key (paid after free credits). MEDIUM-HIGH. VERIFIED (97.5% success, median 4.8s, measured Oct 3–Nov 2, 2026).
+- **TikTok → Urlebird** — urlebird.com. Public profiles/videos/hashtags/music/stories, download; private accounts no. No login. HIGH. VERIFIED (still listed #1/dependable in 2026 guides; frequent pop-up ads, inconsistent performance).
+
+### Carried over — dead (4)
+- **X → Nitter (main instances) — DEAD.** Repo archived; xcancel.com HTTP 451 (Oct 2026); nitter.net shutdown notice Oct 10, 2026; C&D Aug 24 + Sep 8, 2026. HIGH (historical). See surviving community instances below.
+- **Instagram → Bibliogram — DEAD.** Died Sep 1, 2022. No revival.
+- **X → Sotwe — DEAD / failed in Oct 2026 checks.** Bot-challenge pages in scripted checks.
+- **TikTok → ProxiTok — DEAD / effectively dead.** Taken down Mar 5, 2025; "project isn't really working anymore", TikTok blocking server IPs. Upgrade from Nov 1 "fragile".
+
+### Carried over — UNVERIFIED (9)
+TwitterViewer (MEDIUM-HIGH, no Nov browser-live confirmation), FinchView (no new evidence), Dumpor (human-only, captcha-gated — works for humans after captcha, not for automated runs), Pictame (no Nov evidence), InstaNavigation / StoriesIG (instanavigation.net redirects to insta-story.com), Facebook paid scraper APIs (no Nov live check), TikTok Official Research API (not re-verified), TikTok unofficial wrappers (no Nov evidence), LinkedIn/Snapchat/Pinterest — no credible Redlib-style frontend found (gap confirmed, not filled).
+
+### New added (31)
+- **X → Surviving community Nitter instances — VERIFIED.** nitter.netbub.com (96% uptime, RSS on), nitter.mizuki.st (94%, RSS on), nitter.pp.ua (95%, RSS on), nitter.mie.foundation (93%, RSS on), nitter.tiekoetter.com, nitter.meowing.monster. Profiles/posts, RSS on some; search does not work without account anywhere tried. No login. HIGH. VERIFIED Nov 3–6, 2026 (11 healthy public instances Nov 5).
+- **X → Squawker (Fritter fork, Android)** — release v3.8.26 Nov 4, 2026. Account-free mobile X reading; logs in through an x.com web view for full use. MEDIUM-HIGH. VERIFIED.
+- **X → LibRedirect** — v3.5.1 Nov 4, 2026. Auto-redirects X links to Nitter instances. No login. MEDIUM. VERIFIED.
+- **X → Thread Reader App** — unrolls long X threads as one clean page. No login for public threads. MEDIUM. VERIFIED (single source, Nov 4, 2026).
+- **X → TwexAPI** — docs.twexapi.io. No-login X profile read + RSS replacement; free viewer 20 lookups/hour, latest 10 posts only. MEDIUM-HIGH. VERIFIED Nov 1, 2026.
+- **X → UnifAPI** — unifapi.com. Free browser viewer pages (no login, per-visitor rate limit); paid MCP/API for timelines/search/replies/media/followers/trends. MEDIUM-HIGH. VERIFIED (Oct 7, 2026; free `/tools/x/` endpoints moved to paid MCP/API Oct 17, 2026).
+- **X → Logged-out x.com itself — VERIFIED.** Public profiles (bio, follower count, ~5 newest own posts) + single posts; search/Replies/Media tabs redirect to login (307). LOW (official site, logged-out). 10/10 profiles, 30/30 single posts, 0/55 reposts in a 2026 test.
+- **X → OldTwitter + Control Panel for Twitter (extensions)** — restyle/control X in your own logged-in session (not a no-login viewer). LOW-MEDIUM. VERIFIED.
+- **Pixelfed — VERIFIED.** pixelfed.org; v0.15.2 Oct 21, 2026; 1.3M people across 2,200 servers. Federated Instagram alternative — NOT an Instagram-content client; separate network. LOW.
+- **Nostr — Web clients — VERIFIED.** Primal (primal.net), Ditto, Jumble, noStrudel, Coracle, Snort, Iris, njump.me (renders any nevent/naddr/npub as a plain web page). Public notes/feeds/articles/photos; read without account in several clients. LOW.
+- **Loops (Pixelfed project, TikTok-style short video for Fediverse) — UNVERIFIED.** No Nov 2026 live/instance check.
+- **Tumblr → Priviblur — UNVERIFIED.** github.com/syeopite/priviblur (v0.3.0 Mar 2025); instances priviblur.thebunny.zone, priviblur.gitro.xyz, priviblur.canine.tools. Browse Tumblr blogs/posts/tags without tracking/JS; RSS feeds. MEDIUM-HIGH.
+- **Tumblr → Zoomblr / Tumlook / Tumbex / Cascadr / TumViews — UNVERIFIED.** Anonymous Tumblr blog browsing/image galleries; single Brave-summary source, no dated live test. MEDIUM-HIGH.
+- **Tumblr → Official Tumblr API v2 — UNVERIFIED.** api.tumblr.com/v2/blog/username.tumblr.com/info — basic info, not linked blogs without auth. LOW (official, keyed). Single secondary source.
+- **Truth Social → Official "Truth API" (launched Aug 1, 2026) — VERIFIED (licensed feed, NOT a developer API).** Real-time feed of market-moving posts from highest-ranking accounts, for Wall Street/trading desks; no self-serve signup, no profile/follower endpoints, no arbitrary-account query; pitched up to $100,000/month. LOW (official, licensed) but inaccessible to general use.
+- **Truth Social → SocialCrawl Truth Social API — VERIFIED.** socialcrawl.dev. Public profiles, user post timelines, post details as JSON; one vendor key, no OAuth. MEDIUM-HIGH. Scope limit: most non-prominent accounts require auth and 404.
+- **Gab — native site gab.com — VERIFIED (site up; no public API/client found).** FAQ updated Jun 17, 2026; site reachable Nov 3, 2026. LOW.
+- **Parler — UNVERIFIED.** No Nov 2026 live check; only 2021-era return articles. Do not claim live.
+- **MeWe — UNVERIFIED.** No Nov 2026 live check; member model, no login-free public read established.
+- **Misskey — misskey.io — UNVERIFIED** (software live, instance health not re-checked). LOW.
+- **Pleroma — pleroma.social — UNVERIFIED** (same caveat). LOW.
+- **PeerTube — joinpeertube.org — UNVERIFIED** (same caveat). LOW.
+- **TikTok → Xaller — VERIFIED (guide-verified, not live-tested).** Public TikTok profiles/videos, download without watermark; no login. HIGH.
+- **TikTok → TikToklooker — VERIFIED (guide-verified).** Public profiles/videos/reposts/stories, download; no login. HIGH.
+- **TikTok → MaveKite — UNVERIFIED.** Named only, no test. HIGH.
+- **TikTok → TikViewer — VERIFIED.** tikviewer.org. Public profile reposts (up to 21/page), videos, live stories, following/followers, comments, MP4/MP3 download; single downloads free, batch/exports paid. No login. HIGH. (Updated Oct 12, 2026.)
+- **Instagram → Peekd / PeekIG — VERIFIED (vendor pages, Nov 4, 2026; independent live-test not found).** Peekd: public stories anonymously + dated follows/alerts; PeekIG: anonymous viewer, claimed reliable vs Imginn's empty results. No login. HIGH.
+- **Snapchat → WePlayOld Snapchat Story Viewer / ViewSnapStories — UNVERIFIED.** weplayold.com. Public username → current story/highlights/Spotlight; no login/app. HIGH (Snap ToS risk, device-ban risk). Claim-only, no dated live test.
+- **Multi-platform viewer aggregators — UNVERIFIED.** DownloadKit, Vieew, AnonyWatch, Viiewerr, Inspectvia. Claimed one hub for public Instagram, TikTok, Facebook, X, Pinterest, Reddit, LinkedIn, Snapchat, Threads, YouTube. HIGH. All claim-only; do NOT use their LinkedIn/Snapchat/Pinterest claims as proof those gaps are filled.
+- **Fediverse → ActivityPub MCP Server — UNVERIFIED.** Read public fediverse via MCP (Mastodon, Misskey, Foundkey, Pleroma/Akkoma, Lemmy, PeerTube, Pixelfed); no account for public reads. LOW-MEDIUM. Listing only.
+- **Instagram → Picuki (original) — DEAD (new finding).** picuki.com redirects to tikvib.com (a TikTok site) since Sep 2025; re-tested Oct 27, 2026. `picuki.site` is a separate unclaimed look-alike, not the original.
+
+Other notes: GreatFon and Smihub now redirect to dumpor.io; InstaNavigation.net → insta-story.com. Nov 4, 2026 test of 25 anonymous Instagram story viewers: 12 of 25 unusable that day — current reliability baseline for Instagram viewers.
+
+---
+
+## 3. Video / music / streaming
+
+### Carried over — live (13, plus 2 counted in the 13/15 range in the worker return)
+- **YouTube → YouTube Data API v3 (official)** — developers.google.com/youtube/v3. Public metadata; 10,000 quota units/day. Key only, no login for reads. LOW. VERIFIED.
+- **YouTube → YouTube oEmbed (official, no key)** — youtube.com/oembed. Single-video title/author/thumbnail. No login. LOW. VERIFIED.
+- **YouTube → noembed.com** — oEmbed proxy, no key. No login. LOW. VERIFIED (prior use Oct 8, 2026).
+- **YouTube → Invidious** — invidious.io; instances at docs.invidious.io/instances/. Read-only watch/search/channels, no Google account. MEDIUM. VERIFIED (fragile) — stable release v2.20261022.0 (Oct 23, 2026) / v2.20261103.0. Official clearnet list now **4 instances**: inv.nadeko.net (Chile, Go-away CAPTCHA), invidious.nerdvpn.de, yt.chocolatemoo53.com (US), invidious.tiekoetter.com (Germany). Docs warn any instance not on the list is untrustworthy; self-host recommended.
+- **YouTube → Piped** — piped.video; docs piped.video/docs/faq/; instances at github.com/teampiped/documentation. Proxied watch/search, SponsorBlock, JSON API. No login. MEDIUM. VERIFIED (fragile) — piped.video reported UP, but early-Oct 2026 GitHub reports said the official instance was not working; treat any single instance as UNVERIFIED until tried.
+- **YouTube → FreeTube / NewPipe / LibreTube / Yattee** — freetubeapp.io / newpipe.net / libretube.dev / Yattee (TestFlight). Local clients, no Google account. MEDIUM. VERIFIED — FreeTube 0.25.3 (late Aug 2026) fixed PoToken/SABR breakage; NewPipe v0.28.8 (Jun 2026); LibreTube v31.4/v32.1. **Change: LibreTube v31 removed support for public Piped instances** ("none working in a while"), defaults to local extraction; custom instance still addable.
+- **YouTube → yt-dlp** — github.com/yt-dlp/yt-dlp. Metadata/subtitle extractor, NOT a frontend; cookies/PO tokens when bot-checked. HIGH if misused. VERIFIED (actively maintained).
+- **Twitch → Twitch Helix API (official)** — dev.twitch.tv/docs/api; api.twitch.tv/helix. Live streams, users, VODs, clips; app token required. LOW. VERIFIED.
+- **Vimeo → Vimeo API (official) + oEmbed / Player SDK** — developer.vimeo.com (API v3.4). Public metadata, embeds. LOW. VERIFIED. **Change: Vimeo On Demand discontinued** — new purchases/subscriptions/renewals stopped Sep 21, 2026; **full shutdown Nov 20, 2026**, purchased-title access ends that day. Do not build on the On Demand API; Vimeo points sellers to Vimeo OTT.
+- **Netflix / Disney+ / Hulu / Peacock / Max / Paramount+ / Discovery+ / Prime Video / Apple TV+ → NONE for playback.** No legitimate read-only frontend/mirror; playback = paid account + DRM player. DRM/paywall-bypass tools (WidevineProxy2, KeyDive, Devine, N_m3u8DL-RE) flagged NOT recommended. VERIFIED unchanged.
+- **SVOD metadata → TMDB API** — themoviedb.org. Title/cast/synopsis/posters/availability metadata, no playback. LOW. VERIFIED.
+- **Spotify → Spotify Web API (official)** — developer.spotify.com. Public metadata with OAuth; playback only via authorized SDK/player; 2024 revocations (recommendations, Audio Analysis/Features, algorithmic playlists) still stand. LOW. VERIFIED.
+- **SoundCloud → SoundCloud API v1 (official, limited) + oEmbed** — developers.soundcloud.com. Public reads with client_id; new registrations require support approval. LOW if approved. VERIFIED (v1 still the stable public version in 2026; AAC HLS streams mandated, MP3/Opus deprecated Dec 31, 2025).
+- **SoundCloud → SoundCloud API v2 (internal, unofficial)** — api-v2.soundcloud.com. Richer public metadata; client_id rotates every few weeks, 401/429/IP blocks. MEDIUM. VERIFIED (~50–100 req/min cited).
+- **SoundCloud → NewPipe (Android)** — local client for SoundCloud + YouTube/PeerTube/Bandcamp, no account. MEDIUM. VERIFIED.
+
+### Carried over — dead (1)
+- **YouTube Music → Beatbump — DEAD as a public instance.** "No longer being actively developed, due to the changes made by YouTube" (README); website unreachable, "Down since over 3 years ago" (SaaSHub). A fork exists (giwty/Beatbump, self-hosted via Docker + invidious-companion) — self-host only, not a public browser client. MEDIUM, UNVERIFIED for current fork health.
+
+### New added (12)
+- **YouTube/Twitch/Rumble/Odysee/PeerTube/SoundCloud/Dailymotion → Grayjay (FUTO)** — grayjay.app. Multi-platform creator aggregator via signed plugins; local history/subscriptions, offline downloads, casting; login optional per platform. Android + Windows/macOS beta; sideload, not F-Droid (source-available, FUTO custom non-commercial licence). No login for public video. MEDIUM. VERIFIED (v396 tagged Oct 29, 2026, checked Nov 6, 2026).
+- **YouTube → PipePipe (Android)** — F-Droid/GitHub. NewPipe fork: SponsorBlock, Return YouTube Dislike, live chat, search filters, sleep timer, background play, BiliBili support; own extractor, direct (no Piped/Invidious). No login. MEDIUM. VERIFIED (v5.0.0 early May 2026, ~v5.2 Jun 2026).
+- **YouTube → Tubular — DEAD (note, do not add as live).** NewPipe fork, discontinued July 2026.
+- **YouTube → ReVanced — FRAGILE, do not rely.** Patched official app; patches break with every YouTube server change. HIGH (ToS). VERIFIED as unreliable.
+- **Twitch → SafeTwitch (web frontend)** — safetwitch.drgns.space (Codeberg: codeberg.org/engee123/safetwitch). Privacy frontend: all requests proxied through server, no logs/trackers; custom Twitch webscraper. No login stated. MEDIUM-HIGH. VERIFIED as existing (since 2024); single homelab instance is fragile, health not live-checked.
+- **Twitch → Streamlink + Streamlink Twitch GUI / Chatty / Chatterino (desktop, non-browser)** — streamlink.github.io; chatty.github.io. Streamlink pipes streams to VLC/mpv; Chatty/Chatterino are chat clients (login required for chat — Twitch requires auth to join chat). No login for watching via Streamlink. MEDIUM. VERIFIED.
+- **Dailymotion → Dailymotion Data API (official)** — api.dailymotion.com; developers.dailymotion.com. Public reads need NO API key: public videos/channels/playlists/search anonymously; OAuth 2.0 only for user data/writes. LOW. VERIFIED (crawled 11 hours before the refresh).
+- **PeerTube → PeerTube REST API + Sepia global search** — per-instance `GET /api/v1/search/video-channels` and video search; global index search.joinpeertube.org; instances joinpeertube.org/instances; per-instance RSS/Atom feeds. No login for public video. LOW (official, federated by design). VERIFIED.
+- **Odysee / LBRY → Odysee + RSS** — odysee.com. Blockchain-based video platform, free to watch, no login for public video; channel RSS at odysee.com/$/rss/@USERNAME. LOW-MEDIUM (LBRY search API stability UNVERIFIED). VERIFIED as a live platform.
+- **Rumble → Rumble Live Stream API v1.0 (beta, official, creator-gated)** — API key required; wrapper Cocorum on PyPI (2.20.0, Oct 20, 2026). Live-stream API only, not a general video-search API; unofficial wrappers NOT endorsed. MEDIUM / HIGH for unofficial wrappers. VERIFIED as existing; general video API = none found ("no public search API + aggressive anti-bot").
+- **SVOD metadata → JustWatch — NOW VERIFIED.** justwatch.com. Streaming-availability search across 50+ services per country; free, no login for search. JustWatch TV launched Oct 2026 (free ad-supported tier + $3.99/mo Plus). No public/open API; third-party wrappers (e.g. Crawlora) are paid scrapers, MEDIUM-HIGH. LOW for the site itself.
+- **SVOD metadata → Trakt API v2 — NOW VERIFIED.** api.trakt.tv; docs trakt.docs.apiary.io. ~150 endpoints; OAuth 2.0; free tier (250 watchlist, 5 lists, 100k history); `/movies/{id}/watchnow/justwatch_links/{country}` returns JustWatch deep links. LOW-MEDIUM.
+- **SVOD metadata → Reelgood API — NOW VERIFIED.** data.reelgood.com/api-docs/api-documentation/. Real-time "where-to-watch" for a single title; 300+ services, 25+ countries; API key required. LOW-MEDIUM (commercial, key-gated).
+- **Apple Music → Apple Music API / MusicKit — NOW VERIFIED (was UNVERIFIED).** developer.apple.com/musickit/; api.music.apple.com/v1. Full catalog search; catalog reads need only a developer token (JWT, requires paid Apple Developer Program $99/yr — hard gate); user library/recommendations need a Music User Token (subscriber sign-in). Playback still requires subscription + authorized player. LOW. VERIFIED (WWDC26 session confirms MusicKit active in 2026). Note: iTunes Search returned HTTP 403 from some egress IPs from May 28, 2026 — do not rely on the unauthenticated iTunes endpoint.
+- **Bandcamp → CORRECTION: no public API.** Public API shut down years ago; access now restricted OAuth 2.0 for labels/merchandise partners only. Public pages/embed player still readable in browser; NewPipe covers Bandcamp playback. Third-party scrapers (Apify actors, Mar 2026) are HIGH. VERIFIED.
+- **YouTube/SoundCloud/Vimeo → Cobalt — YouTube downloads DISABLED on the official instance.** cobalt.tools; api.cobalt.tools. Paste-a-link downloader, no login, self-hostable (AGPL-3.0). Official instance: YouTube disabled ("due to restrictions from YouTube's side and infinite maintenance cost at scale", Jun + Sep 2026 tests); SoundCloud/Vimeo/TikTok/X still work on the main instance per Sep 2026 tests; official API now requires auth (API keys/Turnstile); community instances (e.g. cobalt.meowing.de) reportedly still do YouTube — UNVERIFIED. HIGH if used to download copyrighted/paid content. VERIFIED as YouTube-dead on main instance.
+- **Spotube — CORRECTION: no longer a Spotify client.** Spotify C&D in 2025; v5 (5.1.2, Jun 9, 2026) removed Spotify entirely — now a plugin-based player (MusicBrainz/ListenBrainz metadata + YouTube audio via NewPipe extractor). Do NOT list as a Spotify client.
+
+### UNVERIFIED (8)
+Hyperpipe (YouTube Music frontend, no current instance/health source), Materialious, CloudTube, PokeTube, Morphe (Piped fork, GitHub APK only), SmartTube (Android TV), invidious.f5.si (Japan — not in current official docs list), Rumble unofficial wrappers (RumblePy, Cocorum internal-API submodules — HIGH).
+
+---
+
+## 4. Finance / banks / payments / crypto
+
+Context change since Nov 1, not a client: JPMorgan/Chase said on its Q3 2026 earnings call (Oct 15, 2026) it will block outside AI agents logging in to customer accounts with credentials; Citi and Bank of America have since put similar restrictions in place. JPMorgan supports customer-authorized sharing through open-banking providers only (registered, approved, paying). Source: blog.starpointllp.com/2026/10/banks-are-blocking-agents/. This strengthens the aggregator-only rule; it does not create a new client.
+Hard gates, all entries: banks and IRS are login-only by design. No client below logs in as the user. Screen-scrapers that hold the user's bank password, unofficial Robinhood-stock / Venmo / Cash App scrapers, and proxy/IP-rotation to evade PayPal/bank/exchange geo blocks remain HIGH-risk, do-not-count.
+
+### Carried over — live (11)
+- **Chase / BofA / Wells Fargo / Citi / Morgan Stanley → Plaid, Yodlee (Envestnet), Finicity (Mastercard Open Banking)** — plaid.com. Consumer-permissioned read-only balances/transactions/holdings/liabilities; user authenticates in Plaid's flow; agent never holds the bank password. Cannot move money or pay bills. API only, developer account/approval + paid tiers. LOW. VERIFIED (Nov 5, 2026 sources; Plaid 12,000+ institutions; BofA migration: existing Items gradually disconnected from old BofA API, must move to new API via update mode; new BofA API has 12-month consent expiry). Yodlee/Finicity also VERIFIED live (MX blog Oct 29, 2026: "Major financial data aggregators in the U.S. include MX, Mastercard (Finicity), Plaid, Yodlee, and Akoya").
+- **Schwab → Schwab Trader API (official, OAuth) + Schwab MCP server / Charley** — developer.schwab.com. Trader API: equities/ETFs/options, market data, account/transactions, orders; 30-min access token, **7-day refresh token — human re-login weekly**; 120 orders/min cap. LOW (official). VERIFIED for Trader API. **UNVERIFIED for Schwab MCP server / Charley as an external client** — Nov 2026 source: "Neither Schwab nor Fidelity has a first-party connector for Claude or ChatGPT that we know of; Schwab's own assistant, Charley, rolls out inside Schwab.com and Schwab [app]" — do not present Charley as an external MCP route.
+- **Schwab, Fidelity, Robinhood, Vanguard, E*TRADE (read) → SnapTrade** — snaptrade.com. Positions, balances, orders, transactions; trading at supported brokers, read-only at several. API only. LOW. VERIFIED (45+ brokerages, 450M+ accounts, Sep 2026).
+- **Robinhood (crypto only) → Robinhood Crypto Trading API** — docs.robinhood.com. Crypto quotes, buying power, holdings, market/limit/stop orders; Ed25519-signed keys. Does NOT cover stocks/options. LOW, crypto-only. VERIFIED (Oct 2026).
+- **PayPal (merchant) → PayPal Developer REST APIs** — developer.paypal.com. Merchant payments, subscriptions, payouts, invoicing, disputes, reporting for your own merchant account only. LOW. VERIFIED (base api-m.paypal.com, OAuth2 client-credentials, Nov 4, 2026).
+- **Venmo (merchant/business) → PayPal/Venmo approved-developer APIs (select access only)** — approved business integrations only. LOW only if approved. **UNVERIFIED** (scope not re-confirmed against a primary Venmo doc in this sweep — do not overclaim).
+- **Cash App (merchant) → Square Developer APIs** — developer.squareup.com. Square merchant payments, not personal Cash App P2P history. LOW for merchant use; PARTIAL — no safe personal-account route. VERIFIED (merchant scope confirmed Oct 2026).
+- **Zelle → Underlying bank's own app + Plaid read of the funding account** — read balances/transactions of the funding account; Zelle sends still happen in the bank app by the human. No consumer Zelle API exists. LOW (read-only). VERIFIED. Note: standalone Zelle app shut down April 2025 — Zelle now lives only inside partner bank/credit-union apps (2,300+ institutions).
+- **Coinbase, Binance / Binance.US, Kraken, OKX, Bybit → Each exchange's official REST + WebSocket API (ccxt is a client for these official APIs, not a scraper)** — public market data keyless; scoped read/trade via keys; IP-restricted keys; never enable withdrawal/transfer on a bot key; US users must use Binance.US where restricted; Bybit 403s US/Mainland China IPs; OKX US is a separate, narrower exchange. LOW if official keys with least privilege. VERIFIED (Nov 6, 2026 checklist across Binance/Bybit/OKX/Kraken/Coinbase docs). Risk note: Binance published Nov 3, 2026 first findings on its October hot-wallet theft (engineer socially engineered via fake job interviews) — does not change API liveness; reinforces least-privilege / IP-whitelist / no-withdrawal rules.
+- **IRS personal → NO agent-login alternative** — IRS Free File / commercial tax software, phone/mail, ID.me/Login.gov human login; e-file provider APIs for authorised preparers/software only. LOW only via authorised channels. VERIFIED — still no agent route ("The IRS has no general-purpose practitioner API in 2026… Browser automation against the IRS is high-risk and not viable", May 14, 2026).
+- **Stripe (not blocked) → Stripe API + Stripe CLI + webhooks** — payments, Billing/subscriptions, Connect, invoicing for your own Stripe account. LOW. VERIFIED (api.stripe.com/v1, 100 req/s live, Nov 4, 2026).
+
+### Carried over — dead (0)
+None. Corrections only: Schwab Charley/MCP UNVERIFIED as an external route; Fidelity has no direct public retail API — access via Fidelity Access / SnapTrade only; Zelle standalone app gone.
+
+### New added (16)
+- **Claude Personal Finance via Plaid (Anthropic, announced Nov 5, 2026) — VERIFIED.** Read-only bank/card/loan/investment balances + up to 2 years transactions, up to 16 banks, spending/bills/subscription answers in Claude. Cannot move, manage or invest money; not investment advice. In browser: Claude web/app Personal Finance hub (US beta). Login: Claude Pro/Max/Ultra, US only, personal accounts only; user signs in to bank via Plaid, Claude never sees bank password. LOW (official, read-only, revocable) — caution: read-only still exposes 2 years of transaction detail; unlinking stops future reads but does not erase data already used in chats.
+- **Robinhood Agentic Trading (Robinhood Trading MCP) — VERIFIED.** Official path to Robinhood stocks/options for an AI agent — external agent connects via MCP to a **dedicated, separately funded Agentic account**; reads accounts and places long equity, options and crypto orders. MCP at `https://agent.robinhood.com/mcp/trading` (launched May 27, 2026). LOW (official) — separate-account scope is the control; do not present as access to an existing main Robinhood account.
+- **PayPal official MCP server — VERIFIED.** Hosted https://mcp.paypal.com/mcp, sandbox https://mcp.sandbox.paypal.com, OAuth PKCE; invoices, orders, refunds, disputes, subscriptions, catalogue products, transaction reports (30–48 tools). LOW (official, merchant-only).
+- **Stripe official MCP server — VERIFIED, with Oct 31, 2026 key change.** Same Stripe scope via MCP (10 tools, human approval for sensitive writes, 24-hr approval expiry). **Action note: from Oct 31, 2026 MCP accepts only OAuth or Agent-tagged API keys (others get 401); from December 2026 the MCP server rejects full-access secret keys and untagged restricted keys (migration deadline Nov 30, 2026).** LOW.
+- **Square official MCP server — VERIFIED.** Hosted https://mcp.squareup.com/mcp with OAuth + granular scopes, plus local `npx square-mcp-server start`. Covers Cash App merchant side (Cash App Pay is a Square checkout method). LOW.
+- **Akoya (bank-owned open-banking network) — VERIFIED.** 100% API, credential-free, tokenized data sharing; 4,300+ FIs via direct API only. Jointly owned by Fidelity, The Clearing House, 11 member banks incl. BofA, Capital One, Citi, JPMorgan Chase. LOW. Enterprise agreement (reported ~$2,000/mo minimum — single-source, indicative).
+- **MX (financial data aggregator) — VERIFIED.** Account aggregation + data enrichment / transaction categorisation; 16,000+ data sources; API + OAuth with fallback scraping. LOW-MEDIUM (API-first but fallback scraping noted — verify per-connection method).
+- **Coinbase official MCP server (Coinbase Advanced) — VERIFIED.** https://agents.coinbase.com/mcp, OAuth 2.1; orders_preview dry-run before orders_create; revoke in Account > Security > Connections. LOW.
+- **Kraken official MCP / CLI MCP — VERIFIED.** Kraken Spot/Futures via official agent tooling, incl. paper trading. LOW.
+- **Bybit official MCP server — VERIFIED.** 380+ V5 tools, market data without a key, demo trading (api-demo.bybit.com), testnet. LOW (official) — **geo-blocked for US users; do not use from a US IP.** UK: no new registrations; from Oct 21, 2026 UK accounts are withdrawal-only.
+- **OKX Agent Trade Kit (official open-source MCP) — VERIFIED.** 170 tools across 11 modules, `--read-only` flag, per-module filtering, built-in rate limiter; keys stay local; demo trading profile. LOW.
+- **Binance Agent OS MCP — UNVERIFIED.** Listed among official MCPs in one secondary source (Oct 2026); endpoint/docs not independently opened — verify against Binance docs before use. US users must use Binance.US instead.
+- **CCXT MCP server — VERIFIED.** CCXT's official MCP server — market data, balances and opt-in trading on 100+ exchanges/prediction markets via CCXT's official-API implementations (github.com/ccxt/ccxt). LOW (MIT licence). No login for public market data; exchange API keys for private/trade.
+- **IRS app (replaces IRS2Go, launched Sep 25, 2026) — VERIFIED.** Free IRS app (iOS/Android, English/Spanish): refund/amended-return status, balance owed, payments, select notices, transcripts, IP PIN — after ID.me sign-in. Does NOT file returns; full online account still on IRS.gov. Human only; still no agent-login route. LOW (official IRS).
+- **Fidelity Access via SnapTrade — VERIFIED.** Fidelity's own API-based account sharing: user selects accounts to share without giving username/password; revocable from Fidelity's data-sharing dashboard. Via SnapTrade: read-only, holdings may be up to 24 hours old, no trade execution. LOW. **Also confirms: Fidelity has NO public retail trading API** (institutional FIX only) — direct Fidelity API is therefore not a separate entry.
+- **Cash App Pay Partner API — VERIFIED, LOW for approved PSPs/merchants.** PSP/e-commerce-platform-only REST APIs + JS SDK for accepting Cash App Pay at merchant checkout; approval + certification, no self-serve key. No personal P2P automation.
+- **fidelity-trader-api (PyPI, unofficial) — VERIFIED as existing, HIGH.** Community Python SDK/CLI/self-hosted REST for the Fidelity Trader+ API, 43 modules, dry-run default. Not affiliated/endorsed by Fidelity; listed for completeness only, NOT recommended.
+
+### No-route confirmations (unchanged, re-confirmed)
+Morgan Stanley (retail): no public retail API found — only institutional routes (Morgan Stanley at Work / Shareworks API for equity-plan data); retail access via aggregators only. Venmo consumer / Cash App personal P2P / Zelle consumer: no consumer API. IRS personal: no agent API.
+
+---
+
+## 5. News / paywalls / search
+
+### Carried over — live (30)
+- **NYT → NYT Developer API** — developer.nytimes.com; `https://api.nytimes.com/svc/search/v2/articlesearch.json`. Article Search, Top Stories, Archive (to 1851), Books, Most Popular. Metadata/headlines/abstracts, NOT full paywalled text. Free key. LOW (non-commercial only). VERIFIED (buildstudio.com.ng verified Nov 2, 2026: free 500 req/day, 5/min). **Quota conflict UNRESOLVED:** other 2026 sources say 4,000/day / 10/min, and a GitHub issue (Jul 30, 2026) says 5,000/day. Do not quote a single quota as settled.
+- **Guardian → Guardian Open Platform** — open-platform.theguardian.com; `https://content.guardianapis.com/search`. Full article text via `show-fields=bodyText`, archive 1999–present, 1.9M+ items. Free Developer key. LOW, non-commercial only. VERIFIED (apidog.com, quotas checked Oct 22, 2026: 500 calls/day, 1/sec, full text). **Conflict:** other sources say 5,000/day, 12/sec. Do not quote a single quota as settled.
+- **Substack → Substack RSS** — `<publication>.substack.com/feed`. Free posts in full; paid posts preview-only. No login. LOW. VERIFIED (feeds fetched Oct 30, 2026: works, 20 items).
+- **Medium → Medium RSS** — medium.com/feed/@username, /feed/<publication>, /feed/tag/<tag>. Member-only stories shortened. No login. LOW. VERIFIED (fetched Oct 30, 2026: works, 10 items).
+- **BBC → BBC RSS** — feeds.bbci.co.uk/news/rss.xml, /news/world/rss.xml, /sport/rss.xml. Headline + summary. No login. LOW. VERIFIED (every feed checked Oct 22, 2026: top stories 32 items, 30 in last 24h). Note: BBC Magazine feed stale since Dec 2022; BBC Worklife no new post since May 2026 — do not use those two.
+- **NPR → NPR RSS** — feeds.npr.org/1001/rss.xml (news), /1004/rss.xml (world), /1002/rss.xml, /1003/rss.xml. Headline + short summary. No login. LOW. VERIFIED (Oct 2026; HTTP 200 Oct 17).
+- **WSJ → WSJ RSS** — feeds.content.dowjones.io/public/rss/RSSWorldNews, /RSSMarketsMain. Headline + ~130-char stub only; full text server-side paywalled. LOW for headlines; HIGH if used to defeat the paywall. VERIFIED (measured Oct 17, 2026).
+- **Bloomberg → Bloomberg RSS** — bloomberg.com/feeds/markets/news.rss, feeds.bloomberg.com/technology/news.rss. Headline + ~240-char stub only. LOW for headlines; HIGH if used to defeat the paywall. VERIFIED (Oct 17, 2026).
+- **FT → FT RSS** — ft.com/rss/home/international. Headline/teaser only. LOW for headlines. VERIFIED (feeder.co, every feed checked Sep 2026; depth not re-tested in Oct).
+- **NYT → NYT RSS (per-section)** — rss.nytimes.com/services/xml/rss/nyt/HomePage.xml, /World.xml. Headlines; linked articles paywalled. LOW. VERIFIED (checked Oct 22, 2026: HomePage 15 items, all last 24h; World 48 items). Conflict: one 2026 guide claims NYT RSS/Semantic API are retired — NOT confirmed by the Oct 22 live test; use the API as primary, RSS as headline-only.
+- **The Atlantic → Atlantic RSS** — theatlantic.com/feed/all/. **Full text in feed** — rare exception (median ~7,000 chars/item). No login. LOW. VERIFIED (measured Oct 17, 2026: one of only 7 of 40 feeds carrying full text).
+- **Google Search → Google Custom Search JSON API** — developers.google.com. Programmable Search Engine you configure — NOT the full Google.com SERP; snippets/metadata only. Existing customers only; free 100 queries/day, $5/1,000 after, cap 10,000/day. LOW. **VERIFIED — live but SUNSETTING, hard stop Jan 1, 2027.** Closed to new customers; new engines since Jan 20, 2026 must use "Sites to search" (max 50 domains); "Search the entire web" ends Jan 1, 2027. Google points to Vertex AI Search (see New).
+- **Search → Brave Search API** — brave.com/search/api/. Independent Brave index; titles/URLs/snippets, no content extraction. API key, card required for abuse checks. LOW. VERIFIED. **Free tier changed Feb 12, 2026** — old 2,000 queries/mo free plan is gone; now $5 free credit/month on each plan (Search $5/1,000, so ~1,000 searches), attribution required. Several Oct 2026 roundups still quote 2,000/mo — stale.
+- **Search → Exa** — exa.ai. Neural/semantic web search, own index; search + contents + answer endpoints. No card. LOW. VERIFIED (pricing checked Oct 22, 2026: $10 credit at signup, $10/month refill; $4/1,000 Lite, $7/1,000 Auto/Fast).
+- **Search → Tavily** — tavily.com. AI-agent search + extract + optional synthesised answer in one call. No card. LOW. VERIFIED (free Researcher 1,000 credits/month; PAYG $0.008/credit).
+- **Search → Firecrawl** — firecrawl.dev. Search + scrape/crawl to clean markdown in one call. No card. LOW. VERIFIED (free 1,000 credits/month; search costs 2 credits/10 results, ~500 searches).
+- **NewsAPI.org** — newsapi.org. 150,000+ sources, Everything + Top Headlines. Free key. LOW-MEDIUM. VERIFIED (free Developer 100 req/day, 24h delay, 1-month history, dev/test only; Business $449/mo).
+- **Currents API** — currentsapi.services. 168 countries, 20+ languages; headline + 300-char preview, 20 results/req. Free key, no card. LOW-MEDIUM. VERIFIED (free 250 req/day — one test source says 600/day, treat 250 as vendor-stated; 30-day lookback).
+- **GNews** — gnews.io. 80,000+ sources, Google News rankings. Free key. LOW-MEDIUM. VERIFIED (free 100 req/day, up to 10 articles/req, 12h delay, 30 days, non-commercial only; Essential €49.99/mo adds real-time + full content).
+- **NewsData.io** — newsdata.io. 102,000 sources, 206 countries, 89 languages. Free key. LOW-MEDIUM. VERIFIED (free 200 credits/day, 1–10 articles/credit, 12h delay; commercial use permitted on free for specified fields).
+- **Mediastack** — mediastack.com. ~7,500 sources, 50+ countries, 13 languages. Free key. LOW-MEDIUM. VERIFIED (free 100 calls/month, ~3/day, delayed data, non-commercial only; Standard $24.99/mo).
+- **APITube** — apitube.io. 300,000+ sources stated; sentiment + entity tags. Free key. LOW-MEDIUM. VERIFIED (free 100 req/day, 10 articles each, 12h delay; free-plan FAQ allows commercial use, pricing page says dev/test — note the tension).
+- **GDELT — GDELT DOC 2.0** — api.gdeltproject.org. Global news events/metadata, 100+ languages, updates every 15 min; event archive from 1979. Metadata/event/themes/geo, NOT publisher full text. **No key, no signup.** LOW. VERIFIED (keyless API called live Oct 22, 2026; 1 req/5 sec).
+- **Google News → Google News RSS (unofficial but openly served)** — news.google.com/rss?hl=en-US&gl=US&ceid=US:en; search `news.google.com/rss/search?q=<query>&hl=en-US&gl=US&ceid=US:en`; topic `news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en`; site-limited `news.google.com/rss/search?q=site:reuters.com+when:1h&hl=en-US&gl=US&ceid=US:en`. Titles/sources/timestamps/links (redirect-encoded `news.google.com/rss/articles/CBMi…`, not direct publisher URLs). Max 100 items/feed. No key, no Google account. LOW for headlines, MEDIUM if abused; UNOFFICIAL. VERIFIED (feeds checked Sep 28, 2026; fetched Oct 19, 2026; checked Oct 22, 2026: top stories 38 items, all last 24h; Reuters site-feed 23 items/hour; AP site-feed 20 items/hour).
+- **RSS readers — Feedly** — feedly.com. Free Basic 100 sources, 3 Feeds, 3 Boards. LOW. VERIFIED (Sep 6, 2026).
+- **RSS readers — Inoreader** — inoreader.com. Free 150 RSS subscriptions; Pro adds rules/filters. LOW. VERIFIED (Sep 6, 2026).
+- **Archives — Internet Archive / Wayback Machine** — web.archive.org. Previously-archived public pages only; NYT/Guardian/FT/Gannett now block IA crawlers, so recent paywalled coverage will be absent. LOW-MEDIUM as standalone public-page lookup. VERIFIED as an archive; **DO NOT present as a paywall-bypass route.**
+- **Archives — archive.today / archive.is / archive.ph** — archive.today. Snapshots of pages publicly accessible at archiving time. LOW-MEDIUM as standalone lookup; HIGH as paywall-bypass fallback. VERIFIED as an archive; **DO NOT present as a paywall-bypass route.**
+- **WallHop — HIGH, NOT recommended.** wallhop.io — paste a link, prefix `wallhop.io/`, bookmarklet, `/raw/<url>`, `/api/<url>`. Metered/freemium sites + Medium member-only posts (via the author's own $5/mo Medium session cookie wired into the service — a shared-login pattern; flag it). Claims WSJ/FT/NYT in HN comments; author concedes hard server-side paywalls mostly out of reach, archive fallback only. VERIFIED (HN front page Oct 11, 2026, 265 points). Efficacy on WSJ/FT/NYT is commenter-reported and contested ("It's not working on WSJ" vs "wallhop works on wsj, ft, and nytimes") — do not claim it opens hard paywalls.
+- **Bypass Paywall Reader / removepaywalls-type (generic) — HIGH, NOT recommended.** Finds archived versions; reader-mode/JS-off/overlay-stripping works only on client-side paywalls, fails on server-side hard paywalls (WSJ/Bloomberg/FT). VERIFIED as a class; specific efficacy UNVERIFIED per-site.
+- **Legitimate paid / library routes — LOW.** Own logged-in subscription, or library card: NYT via many US libraries (72h pass); WSJ/Barron's increasingly via libraries (3-day renewable pass); FT widely via PressReader at libraries + universities; Economist via PressReader and Libby. Also syndicated/open-web version of the same story (Reuters, AP, PRNewswire, BusinessWire, SEC.gov); licensed deals (NYT→Amazon May 2025, WSJ/News Corp→OpenAI) are NOT a public alternative. VERIFIED (skipthepaywall.com, updated Oct 27, 2026).
+
+### Carried over — dead (5)
+- **Reuters RSS — DEAD.** No working public feed. feeds.reuters.com did not connect; reutersagency.com/feed/ returned 404 (Oct 22, 2026); "Reuters shut its feeds down in 2020." Replacement: Google News site-limited feed (23 items/hour, Oct 22 test).
+- **AP RSS — DEAD / BLOCKED.** No working public feed; AP's own feed blocks readers; AP's robots.txt bars its feed paths. Replacement: Google News site-limited feed (20 items/hour).
+- **Washington Post RSS — DEAD (as of Oct 2026 test).** feeds.washingtonpost.com/rss/world and /rss/politics returned a 502 error on every try Oct 17, 2026. Re-test before re-listing as live.
+- **Economist public RSS — DEAD / BLOCKED.** Feed URLs return a 403 page to any feed reader; subscribers have a feed through their account; no public one. Full text only via subscription / library.
+- **12ft.io — DEAD (confirmed).** Hosting locked Jul 14, 2025 after News Media Alliance action; domain now 404 / down indefinitely.
+
+### Carried over — UNVERIFIED (1)
+- **RSS readers — NetNewsWire.** No Oct/Nov 2026 liveness source found. LOW (presumed). UNVERIFIED — do not claim live.
+
+### New added (20)
+- **Skip the Paywall — VERIFIED, HIGH (bypass — NOT recommended).** skipthepaywall.com. Metered/freemium sites only — New Yorker, Wired, Time, Fortune, Business Insider, Boston Globe, LA Times, Independent, Medium, Scientific American, regional papers. **Fails on:** hard paywalls (FT, WSJ, Bloomberg, Economist, Barron's, HBR) and bot-protected sites (NYT, Atlantic, Forbes, Telegraph). Paste URL or bookmarklet `skipthepaywall.com/read?url=ARTICLE-LINK`; no signup, 10 articles/min. Server-side fetch as a search crawler + Mozilla Readability; falls back to an archived copy. Actively maintained, updated Oct 27, 2026.
+- **SMRY.ai — VERIFIED, HIGH (bypass — NOT recommended).** smry.ai; github.com/mrmps/SMRY. Soft paywalls + AI summary; hard paywalls (Bloomberg, Barron's, etc.) cannot be accessed. Prepend `smry.ai/` to any article URL, no login; rate limit 20 summaries/IP/day, 6/min. Also an RSS reader / saved-article service (free plan, 20 AI summaries/day).
+- **Serper — VERIFIED, LOW.** serper.dev. Google SERP as structured JSON (real Google results, 1–2 sec). No card. 2,500 free queries, one-time signup grant, no refill; paid from $0.30–$1.00/1,000.
+- **SerpApi — VERIFIED, LOW-MEDIUM.** serpapi.com. Structured SERPs from Google, Bing, and 80+ engines. Free plan 250 searches/month, 50 searches/hour.
+- **NewsAPI.ai / Event Registry — VERIFIED, LOW-MEDIUM.** newsapi.ai. 150,000 outlets, 50+ languages, archive from 2014; event clustering, entities, sentiment. Free key. 2,000 searches, non-renewing, last 30 days, up to 100 articles / 50 events per search; not licensed for commercial use on the free pool. Paid from $90/mo reported.
+- **World News API — VERIFIED, LOW-MEDIUM.** worldnewsapi.com. Structured news data; paid tiers add front pages for 6,000 newspapers across 125 countries. Free 50 points/day, 1 req/sec, 1 concurrent, up to 1 month history; free users must link to worldnewsapi.com.
+- **TheNewsAPI — VERIFIED, LOW-MEDIUM.** thenewsapi.com. Free $0 plan: 100 req/day, only 3 articles per request (smallest result size in that comparison).
+- **WeSearch.press — VERIFIED, LOW.** wesearch.press/news-sources. Hand-curated catalog of 850+ editorial RSS/Atom feeds (Reuters, AP, AFP, Bloomberg, NYT, WaPo, WSJ, Guardian, FT, Atlantic, Economist, etc.) + 88,000+ feeds in discovery catalog; chronological, deduplicated, no per-reader ranking, no paywall, no ad targeting. Web reader, no login stated. Site live with a Nov 4, 2026 daily briefing.
+- **Ground News — VERIFIED, LOW.** ground.news. Coverage comparison across outlets for the same event; publisher bias/factuality ratings (AllSides, Ad Fontes Media, Media Bias Fact Check). Does NOT verify an individual article. Free comparison; paid analysis features.
+- **PressReader (library route, specific) — VERIFIED, LOW.** pressreader.com via your library's Digital Resources page. 7,000+ newspapers/magazines in 60+ languages, full digital editions — incl. NYT, WaPo, Guardian, Economist, FT Weekend — via a public-library card. Library card + PIN required (hard stop if no card); sessions expire every 7–30 days. Libby/OverDrive is the companion route for magazines/ebooks (90% of US/UK/Canadian libraries).
+- **Vertex AI Search / Agent Search (Google's Custom Search successor) — VERIFIED, LOW.** Google Cloud Vertex AI Search. Site-restricted search (up to 50 domains). Standard $1.50/1,000 queries, Enterprise $4/1,000; 10,000 free/month. Note: an enterprise Web Search Service at $15/1,000 with a $30,000/mo minimum was reported via a Google email posted on Hacker News — details due later in 2026, treat as unconfirmed.
+- **Axios — Axios full-text RSS — VERIFIED, LOW.** api.axios.com/feed/. Full text in feed (median ~3,200 chars/item). No login.
+- **Parallel — Parallel Search API / MCP — VERIFIED, LOW.** parallel.ai. Web search + page fetch via MCP, no account/key/card on the free MCP route; API account with card adds $5/mo credits (up to 5,000 Turbo/Fast searches). Free-tier shape is vendor-stated, not independently live-tested.
+- **Bing Search API — DEAD (new finding).** Retired Aug 11, 2025; all existing instances decommissioned, no new signups. Microsoft's replacement is Grounding with Bing Search inside Azure AI Agents — $14/1,000 transactions, paid Azure subscriptions only, returns an AI answer with citations, NOT raw results. Two 2026 guides still quote an F0 free tier of 1,000–3,000/mo — stale/pre-retirement. Third-party SERP vendors (SerpApi, Serper) still sell Bing-engine results.
+- **RemovePaywalls.com — UNVERIFIED, HIGH (bypass — NOT recommended).** removepaywalls.com. Traffic proves the domain is visited (325.03K visits Sep 2026), not that it opens any named paywall. Do not claim efficacy.
+- **PaywallBuster — UNVERIFIED, HIGH.** paywallbuster.com. Named only, no Oct/Nov 2026 live test.
+- **Bye Bye Paywall — UNVERIFIED, HIGH.** byebyepaywall.com. Named / referral-traffic only, no live efficacy test.
+- **13ft — UNVERIFIED, HIGH.** github.com/wasi-master/13ft. Self-hosted paywall-bypass proxy (12ft.io replacement). Repo named only, no live test or maintenance check. Ladder (everywall/ladder) is the same class — also UNVERIFIED here.
+- **Incoggo — UNVERIFIED, HIGH.** Desktop app, system-wide smart proxy to remove ads, paywalls, trackers. Named only, no live test, pricing, or current-status source.
+- **FiveFilters Full-Text RSS — UNVERIFIED, MEDIUM.** Takes a feed URL and returns the same feed with article bodies filled in (hosted or self-hosted). Named only in one Oct 2026 source, no pricing/liveness test. Do not present as a paywall bypass — it fills feeds from pages you can already fetch.
+
+Notes: Hard-paywall wall, confirmed Oct 2026: FT, WSJ, Bloomberg, Economist, Barron's are server-side hard paywalls — a non-subscriber request gets headline + 1–2 paragraphs only. NYT, Atlantic, Forbes use bot protection (403 to automated requests). The Times/Sunday Times hardened Oct 22, 2026 (was crawler-readable, now teaser-only). No reader/bypass in this list opens them; legitimate routes are subscription or library. Quota conflicts unresolved (do not quote as settled): NYT API 500/day/5-min vs 4,000/day/10-min vs 5,000/day; Guardian 500/day/1-sec vs 5,000/day/12-sec; Currents 250/day vs 600/day in one test.
+
+---
+
+## 6. Shopping / marketplaces / travel
+
+### Carried over — live (18)
+- **Amazon → Selling Partner API (SP-API)** — sellers' own accounts only (listings, orders, inventory, reports). Not competitor/market data. API only; seller account + approved developer app. LOW (official, seller-gated). **UNVERIFIED in this refresh** (not re-searched Nov 7; no contrary evidence).
+- **Amazon / Walmart / eBay / Etsy → Third-party structured-data APIs: Rainforest API, Oxylabs, Bright Data, Decodo, SerpApi, Apify actors** — product/search/review data read from public pages on your behalf. API/dashboard, vendor account/key. MEDIUM-HIGH — reads public pages despite Amazon/Walmart ToS bans; NOT recommended as a compliant alternative. **UNVERIFIED** (no fresh vendor-status search Nov 7).
+- **eBay → eBay Developer APIs, incl. Browse API** — developer.ebay.com. Search active listings by keyword/GTIN/category, item details, filters; active listings only, no sold/completed data (Finding API `findCompletedItems` decommissioned Feb 5, 2025; sold data only via limited-release Marketplace Insights for approved partners). API only; developer account + OAuth, ~5,000 calls/day free cited; production needs eBay Partner Network + Growth Check. LOW. VERIFIED (docs live; guides checked Jun–Oct 2026; sold-listings guide Oct 19, 2026).
+- **Etsy → Etsy Open API v3** — developer.etsy.com/documentation/. Search active listings across all shops, shops, reviews, categories; seller shop/listing/order management via OAuth. No cart/checkout/buyer-order endpoints. API only; app registration + API key, Etsy approval (usually 24–48h); 10,000 req/day, 10 req/sec cited; 2FA required to create apps. New: Dev MCP server for API docs/schemas, no key needed for the MCP server itself. LOW (official, gated). VERIFIED (developer.etsy.com live, crawled 8h before refresh; OpenAPI contract last modified Oct 29, 2026, 108 operations).
+- **Shopping comparison → Google Shopping / Meta Catalog search** — cross-retailer product comparison / search index, not a substitute for a retailer's own page; Google's official route does NOT return public Shopping search results (see New). LOW-MEDIUM. VERIFIED as a search index only (Oct 2026). Note: Muse's connector list already includes Meta Catalog — verify live before relying on it.
+- **Shopify stores → Shopify Storefront API (GraphQL) / Admin API (per-store, merchant-granted)** — shopify.dev/docs/api/storefront/latest. One store at a time — products, collections, search, cart, checkout handoff (Storefront); product/inventory/order management (Admin, merchant's own store). Per-store endpoint `https://{store}.myshopify.com/api/2026-10/graphql.json` (2026-01/04/07/10 supported at Oct 27, 2026 check). Storefront: public token, tokenless access capped at 1,000 query complexity. Admin: private token, merchant-granted. LOW (official, merchant-gated, not a cross-store search engine). VERIFIED (Storefront reference live, version 2026-10 released Oct 1, 2026).
+- **Shopify / Etsy / Wayfair / Target / Walmart → Google Universal Commerce Protocol (UCP) + OpenAI/Stripe Agentic Commerce Protocol (ACP)** — agent-native discovery/checkout. UCP announced Jan 11, 2026, co-developed Google + Shopify, with Etsy, Wayfair, Target, Walmart; latest release 2026-08-25. Shopify: every storefront publishes `/.well-known/ucp`, MCP endpoint `/api/ucp/mcp` (Catalog, Cart, Checkout, Order MCP); old Storefront MCP cart tools deprecated Jun 24, 2026, maintained only to Aug 31, 2026. Etsy + Wayfair first live UCP checkout in Google AI Mode, Feb 2026. MEDIUM (early, store-by-store; UCP now live on Shopify, not a public mirror). VERIFIED (Shopify changelog Sep 4, 2026; guides checked Oct 18–25, 2026).
+- **Shopify per-store public JSON feeds (`/products.json` where merchant leaves it open)** — single-store catalogue JSON, where enabled. Direct JSON URL in browser, no login where open. MEDIUM (merchant-configurable, not guaranteed). **UNVERIFIED as a general rule** (not separately tested Nov 7).
+- **Airbnb → Inside Airbnb** — insideairbnb.com/get-the-data/. Free community project, quarterly CSV snapshots for ~100 cities, no API, no real-time prices/availability. Research only. Download page in browser, no login. CC BY 4.0. LOW for research. VERIFIED (Sep 2026 snapshots used in published analyses; NYC snapshot Oct 4, 2026). Note: underlying data is scraped Airbnb public listings, against Airbnb ToS — use the published snapshots, do not re-scrape.
+- **Airbnb → AirDNA, AirROI, Key Data, Mashvisor, Lighthouse, StayAPI** — paid third-party STR data APIs/analytics from scraped/calculated data. Vendor API/dashboard, paid. MEDIUM-HIGH. **UNVERIFIED** (no fresh vendor-status search Nov 7).
+- **Airbnb → Airbnb official Partner API (Homes / Activities APIs)** — approved property-management / channel-manager partners only, for managing your own listings. NOT a public search/market alternative. Partner Portal sign-in; no self-serve signup, invitation-only, NDA + data-security review; no official MCP server / ChatGPT / Claude connector as of Oct 2026. LOW, narrow/gated. VERIFIED (partner-only confirmed Oct 8, 2026; Airbnb ToS §11.1, updated Feb 5, 2026, bans bots/crawlers/scrapers).
+- **Booking.com → Booking.com Demand API** — official, key-gated; sells hotel/price access to approved partners; 3M+ properties cited. API only. Hard gate: registered Managed Affiliate Partner + Partner Centre access via account manager after contract + API key + `X-Affiliate-Id`. Direct affiliate programme ended 2025, moved to CJ/Awin. Connectivity API (for PMS/channel managers) — new integrations currently paused. LOW, gated. VERIFIED (prerequisites checked Oct 12, 2026).
+- **Expedia → Expedia Partner APIs / Expedia Group Rapid API** — hotel inventory (3M+ properties, incl. Hotels.com/Vrbo/Orbitz), shop/price-check/book/change/cancel; also cars/activities. API only. Partner-only; key stays in development mode until site review; 3–6 month certification cited; no free tier; Travel Redirect onboarding — new applications paused (Sep 2026 audit). LOW, gated. VERIFIED (checked Oct 12, 2026; benchmark updated Nov 5, 2026).
+- **Travel substitute → Sabre GDS, hotel metasearch (Google Hotels, Kayak, Trivago); Amadeus Enterprise only** — licensed/aggregated travel search as a partial substitute for direct OTA pages. Amadeus Self-Service is DEAD (see below) — Amadeus Enterprise remains, contract-only. No Google Hotels API exists; Kayak/Trivago have no public self-serve API (metasearch sites, browser only). LOW-MEDIUM depending on licence. **UNVERIFIED for Kayak/Trivago API status specifically**; VERIFIED that Amadeus Self-Service is closed and there is no Google Hotels API (Oct 12, 2026).
+- **Ticketmaster → Ticketmaster Discovery API + Discovery Feed** — app.ticketmaster.com/discovery/v2/. 230,000+ events, venues, artists, on-sale dates, buy links across Ticketmaster/Universe/FrontGate/Resale. Price ranges removed from the Feed in March 2025 and now almost always null in the API (only 3 of 4,000+ events pulled Oct 2026 had a price range). API only; free developer key, 5,000 calls/day, 5 req/sec default. No purchase — Partner API is partner-only. LOW. VERIFIED (checked Nov 3, 2026).
+- **Ticketmaster → Tickets.dev Ticketmaster Scraper API** — tickets.dev/ticketmaster-api. Third-party live capture of public event pages (listings, all-in price, seat map) as JSON. API only, paid plans from $50/mo cited. HIGH — reads pages Ticketmaster bot-defends; buying/holding remains partner-only; BOTS Act issues attach to circumvention/purchase, not mere reading — compliance check before use. Listed for completeness, NOT recommended. VERIFIED (live, Oct 2026).
+- **Facebook Marketplace → NO official API; RapidAPI Facebook Marketplace Search API (third-party)** — single GET returning title/price/image/location for a keyword search. No official public API; Graph API has no general Marketplace listing node; Meta's official routes are gated: Content Library API (approved academic/public-interest researchers only) and Commerce Partner APIs (approved classified services/dealers, own inventory only). API only; RapidAPI key, free tier cited. Single-item logged-out Marketplace pages are the only trimmed public surface in a browser. MEDIUM-HIGH. VERIFIED (RapidAPI listing live Mar 2026; review checked Sep 16, 2026). Note: Meta launched standalone Seller iOS app for US Marketplace sellers Jul 24, 2026 — seller tool, not a search API.
+- **DoorDash / Uber Eats / Uber / Lyft → NO public read-only frontend/mirror; partner APIs only.** DoorDash: Marketplace API (menu/store/order, application-only, quarterly review, "not yet generally available") + Drive API (self-serve sandbox). Uber Eats: Marketplace APIs for approved restaurant/retail partners only. Uber (rides): Riders/Drivers API v1.2 at api.uber.com/v1.2, OAuth 2.0, sandbox available; new server tokens no longer issued; Driver API limited access. Lyft: public developer API no longer open to new third-party apps; SDKs deprecated; ride requests/Concierge via Lyft Business agreement only. None is a browser read-only frontend; merchant/restaurant's own website/menu and Google Maps/Places listings are the public fallback. LOW for official partner APIs (gated); HIGH for unofficial DoorDash GraphQL / scraping guides. VERIFIED (DoorDash docs crawled 3–5 days before refresh; Uber docs crawled 1 day before refresh; Lyft closure confirmed Jun/Oct 2026).
+
+### Carried over — dead (4, retain for the record, do not use)
+- **Amazon → Amazon Product Advertising API (PA-API 5.0) — DEAD.** Deprecated, replaced by Creators API. Docs redirect to a deprecation notice; calls return HTTP 403 `AccessDeniedException`. Reported retirement May 15, 2026 (deprecation Apr 30, 2026) — dates from third-party write-ups, not confirmed on Amazon's own pages, which give no date. Replacement: Amazon Creators API (New).
+- **Walmart → Walmart Open API (WalmartLabs, old) — DEAD / closed to new signups.** Old Open API closed to new registrations; affiliate endpoints retired; official wrapper `walmartlabs/walmart-api` archived May 20, 2026, README deprecated/unsupported, last commit 2019-07-11. Current Walmart developer surface is Marketplace API (approved sellers only) + walmart.io affiliate/partner APIs. Replacement: Walmart Affiliate Marketing API v2 (New).
+- **Craigslist → Craigslist RSS feeds (`?format=rss`) — DEAD.** Native RSS retired. `?format=rss` URLs now return the block page (HTTP 403); plain HTML search still returns 200 — endpoint retirement, not an IP block. Confirmed by two independent projects: Nagus removed its Craigslist connector July 2026 ("feed retired"), Rentwise switched from dead RSS to `/jsonsearch` May 2026 after 403s (verified May 8, 2026). Open RSS confirms Craigslist "once offered RSS feeds, but have since removed them." Replacement: Open RSS (New). Bulk Posting API (`post.craigslist.org/bulk-rss/post`, docs at `bapi.craigslist.org/bulkpost-docs/v1/`) remains for approved high-volume posters in paid US categories only — posting, not reading. Risk note: Craigslist ToS prohibits automated collection / circumventing access controls; no compliant replacement fetch path was found by Nagus. **Note: §11's worker reports Craigslist RSS as VERIFIED from a different source ("In 2026, feeds remain unchanged") — the two workers conflict; the §6 evidence (403 block page, two projects removing the connector in 2026) is stronger and more specific. Treat RSS as DEAD until a live fetch proves otherwise.**
+- **Travel → Amadeus Self-Service APIs — DEAD.** Decommissioned Jul 17, 2026; self-service keys disabled, new signups closed, `test.api.amadeus.com` / `api.amadeus.com` have no DNS record, `amadeus4dev` GitHub org archived. Amadeus Enterprise APIs remain, contract + accreditation only. Replacement: Duffel (New).
+
+### New added (8)
+- **Amazon → Amazon Creators API (replaces PA-API 5.0) — VERIFIED.** `SearchItems`, `GetItems`, `GetVariations`, `GetBrowseNodes`; `OffersV2` replaces old Offers. REST, OAuth 2.0, endpoint `creatorsapi.amazon/catalog/v1/*`. Gate: approved Amazon Associates account + at least 10 qualifying sales in trailing 30 days per marketplace; credentials in Associates Central (do not carry over from PA-API); 1 TPS / 8,640 req/day initial limit cited. LOW (official, affiliate-gated).
+- **Google → Google Merchant API (replaces Content API for Shopping) — VERIFIED.** Merchant's OWN products/inventory/account, not public Google Shopping search results. No general-purpose public-results search endpoint exists. API only, OAuth 2.0. Content API for Shopping sunset Aug 18, 2026 (progressive degradation from Sep 1, 2026; extended access by application only). LOW (official, own-account only).
+- **Best Buy → Best Buy Developer API — VERIFIED.** api.bestbuy.com/v1/. Read-only product catalogue: SKUs, prices, sale prices, specifications, store locations, categories, open-box availability, recommendations. No orders (ordering is invite-only Commerce API). Free key from developer.bestbuy.com, passed as `apiKey` query parameter; 5 calls/sec, 50,000/day cited; caching up to 72h, attribution required. LOW (official, self-serve). Noted as the "friendly exception" among US retailers (Target/Home Depot/Costco have no public product API — Medium, Oct 17, 2026).
+- **Duffel — Duffel Flights + Stays API — VERIFIED.** api.duffel.com. Flights + stays search, booking, changes, cancellations, payments — NDC/GDS-aggregated, via one REST API. Dashboard-issued Bearer tokens; self-serve signup, test mode with no card/contract; pay-as-you-go $3/order + 1% cited; 60 req/min default. LOW (official, self-serve).
+- **Walmart → Walmart Affiliate Marketing API v2 (walmart.io) — VERIFIED.** developer.api.walmart.com/api-proxy/service/affil/product/v2. Walmart.com products — search, product lookup, reviews, taxonomy, trending items, recommendations, nearby stores; affiliate links via Impact. Cannot place orders. Also store/ZIP-specific price-and-availability endpoint cited. API key; 5,000 calls/day cap cited in 2020 terms; use only to advertise Walmart.com products, competitors barred from pricing analysis; signup via Impact affiliate programme. LOW (official, affiliate-gated).
+- **Craigslist → Open RSS (third-party feed generator, replacement for dead native RSS) — VERIFIED as a live service page; feed reliability UNVERIFIED for production use.** openrss.org/feeds/craigslist. Generates RSS feeds for any Craigslist section / search / individual post, from the public page URL (prefix `openrss.org/`). Feed URL in browser/RSS reader, no login. MEDIUM — third-party (registered 501(c)(3) nonprofit, donation-funded); generates feeds from pages Craigslist serves publicly, but Craigslist ToS prohibits automated collection — use for personal reading, not bulk collection.
+- **Facebook Marketplace → Meta Content Library API (researcher route) + Commerce Partner APIs (seller route) — VERIFIED.** Content Library API: search public Marketplace listings for an approved research purpose (apply via Research Tools Manager, CASD + Meta reviews). Commerce Partner / Partner Item APIs: approved classified services/dealers publish/manage their own inventory. Neither is a general public listings API. LOW if approved (official, narrow).
+- **Google Shopping results → Third-party Google Shopping results APIs (SerpApi / DataForSEO / PrismCrawl, etc.) — VERIFIED as a live vendor category (Oct 2026); individual vendor reliability UNVERIFIED.** Live product results (title, price, merchant, rating, review count) for a query — what Google's own Merchant API does NOT return. MEDIUM-HIGH — third-party scraping of Google Shopping results; Google ToS bars automated access in violation of machine-readable instructions.
+
+Gates / hard stops: login (Etsy app approval + OAuth, eBay developer + OAuth, Shopify per-store merchant token, Booking/Expedia/Airbnb partner APIs, DoorDash Marketplace / Uber Eats Marketplace partner approval, Ticketmaster Partner/Inventory APIs partner-only); paywall/paid (Ticketmaster partner APIs, Duffel $3/order, third-party scraper APIs, AirDNA/StayAPI paid); CAPTCHA/anti-bot (Wayfair reCAPTCHA on automated browsing, Etsy DataDome 403 on search/category pages Jun 2026, Walmart Akamai + HUMAN/PerimeterX, Ticketmaster bot-defended pages); DRM/purchase: no API in this category places an order on Amazon/Walmart/Target/Wayfair/Best Buy (except merchant's own checkout via UCP/ACP or partner booking APIs); buying stays on the retailer's own site/app. No-route confirmations (still true Nov 2026): Target, Home Depot, Costco — no public product API; Wayfair — no self-serve public API, no keyword-search endpoint; Grubhub — no public consumer API found, partner-only like DoorDash/Uber Eats (UNVERIFIED — no dedicated source returned).
+
+---
+
+## 7. Developer / AI / cloud
+
+Note: no `workers.dev` URL listed as a client — one such URL appeared in a search result for Floci and is excluded / flagged here only, not listed as a client.
+
+### Carried over — live (10)
+- **GitHub → `gh` CLI + official REST/GraphQL APIs** — api.github.com; api.github.com/graphql; docs.github.com/en/rest. Repos, issues, PRs, releases, search, Actions. Plain `git clone --mirror` covers code history/branches/tags only. No login for public reads (60 req/hr unauthenticated); token raises to 5,000/hr. LOW. VERIFIED (gh 2.50.0, Apr 15, 2026; Octokit official, 5,000 req/hr authenticated REST).
+- **GitLab → `glab` CLI + official API (incl. self-hosted)** — gitlab.com/api/v4; GraphQL per-instance. MRs, issues, pipelines, repos, releases. Token required (`glab auth`); self-hosted instances set own rate-limit policy. LOW. VERIFIED (glab v1.116.0, Sep 1, 2026).
+- **Docker Hub alternatives → GHCR, AWS ECR, Azure Container Registry, Harbor proxy-cache** — mirror base images into another registry or pull-through cache instead of pulling from Hub every run. Hub 100 pulls/6h unauthenticated, 200/6h authenticated Personal, Pro/Team/Business unlimited fair-use; GHCR free for public images, ECR metered, Harbor Apache 2.0. LOW. VERIFIED for limits + GHCR/ECR/Harbor as alternatives. **UNVERIFIED:** "GHCR has no documented pull limits for authenticated pulls" not re-checked; "ECR no pull rate limits" not re-verified; ACR pull-limit specifics not re-verified; Harbor proxy-cache HEAD-request behaviour not re-searched.
+- **Hugging Face → `huggingface_hub` Python library + `hf` CLI** — models, datasets, Spaces, downloads/uploads, InferenceClient, via official API. No login for public downloads; HF token for gated models, uploads, Inference Providers. LOW within limits. VERIFIED, with correction: use `hf`, not `huggingface-cli` — `huggingface-cli` **removed in 1.0**; `hf` is the only CLI (huggingface_hub 2.2.0rc0, Oct 8, 2026). HIGH for scraping-vendor bypass tools (residential proxies, CAPTCHA solvers) — not recommended.
+- **npm / PyPI → Official registry APIs + package managers + CDNs + mirrors** — registry.npmjs.org; pypi.org/pypi/<pkg>/json. Full JSON APIs, no auth required for public metadata/installs; unpkg / jsDelivr serve package files by URL. LOW if at/below policy rate (npm website crawl ≤1 req/sec). VERIFIED overall. **Correction (dead sub-item):** npm CouchDB replication streaming (`feed=longpoll/continuous`, `include_docs`) was deprecated Feb 2025, replaced by a paginated JSON changes API (limit 1,000, max 10,000, `startkey` pagination) — the carried-over "CouchDB replication (preferred full-metadata copy)" wording is outdated. **Flag:** unpkg abuse — Aug 25, 2026: 24 npm packages abused unpkg mirrors to host fake Cloudflare CAPTCHA/phishing pages — treat unpkg links as untrusted content, verify package provenance. **UNVERIFIED:** PyPI private mirrors via devpi / AWS CodeArtifact current status not re-searched.
+- **OpenAI / Anthropic → Official APIs, paid tiers; Bedrock / Vertex AI as alternate billing paths** — model API access without the web console/playground. API key + paid tier; higher RPM/TPM by spend tier. No free API credits from OpenAI/Anthropic (checked Nov 2, 2026). LOW. VERIFIED (model names/prices move fast — verify current pricing page before quoting a price). HIGH for distillation/extraction campaigns — providers report blocking coordinated multi-account extraction traffic.
+- **OpenAI-compatible gateways/proxies → LiteLLM, Bifrost, OpenRouter, Cloudflare AI Gateway** — one OpenAI-format client across 100+ providers, fallback/load-balancing. Own provider keys or gateway account/credits. LOW for legitimate routing; **elevated caution on LiteLLM — pin versions, verify before adopting** (Mar 24, 2026 supply-chain compromise, PyPI 1.82.7/1.82.8; CVE-2026-42208, CVSS 9.3, Apr 2026, fixed in 1.83.7). Do not use any gateway to evade a paid API. VERIFIED, all four still live (LiteLLM v1.106.0, Oct 18, 2026; Portkey acquired by Palo Alto Networks, closed May 29, 2026; Envoy AI Gateway 1.0 Jun 23, 2026, renamed Agent Router Sep 10, 2026; OpenRouter Series B $113M, May 2026).
+- **Local inference → Ollama, vLLM, llama.cpp** — run open-weight models locally/offline, no provider rate limits. None for local use; model licences still apply. LOW. VERIFIED (Ollama v0.40.4–0.40.6, Oct 2026; llama.cpp v0.6.0–0.7.0 — server default port changed 8080 → 9931, breaks scripts; vLLM v0.31.0–0.32.0). Version churn is fast — pin versions.
+- **Cloudflare → `wrangler` CLI + Cloudflare API (token-authenticated)** — Workers, DNS, KV, R2, Pages, etc., without the dashboard. Cloudflare account + API token / `wrangler login` (OAuth). MFA gate is a hard stop for automation. LOW. VERIFIED.
+- **AWS / Azure / GCP → AWS CLI, Azure CLI (`az`), Google Cloud SDK (`gcloud`) + SDKs + Terraform/CloudFormation** — nearly all console actions via signed API calls. Own cloud credentials; MFA/SSO gates are hard stops. LOW. VERIFIED for CLIs/SDKs as console alternatives. **UNVERIFIED:** carried-over gap — "which APIs are console-only" — still UNVERIFIED, not established in this refresh.
+
+### New added (12)
+- **Codeberg / Forgejo → `fj` (forgejo-cli), `berg` (codeberg-cli), `fgj` + Forgejo REST API** — codeberg.org/forgejo-contrib/forgejo-cli (fj, commits Nov 5, 2026; v0.7.0); codeberg.org/4uffin/codeberg-cli (berg 0.5.5, Feb 15, 2026); API root `https://codeberg.org/api/v1`. Issues, PRs, repos, releases, like `gh` for Forgejo. Token/OAuth for writes; public reads unauthenticated. LOW. VERIFIED.
+- **SourceHut → `hut` CLI + GraphQL API** — sr.ht. Repos, builds, tickets, patchsets. OAuth2 token from meta.sr.ht required. LOW. VERIFIED (man page current; no Nov 2026 release date established).
+- **Bitbucket → Cloud REST API 2.0 + `bbx` CLI (community, 2026)** — developer.atlassian.com/cloud/bitbucket/rest/api-group-source/; api.bitbucket.org/2.0/repositories/…. Atlassian ships **no official CLI** for Bitbucket Cloud. Atlassian API token (email:token basic auth). **Flag:** Bitbucket app passwords retired June 9, 2026 — do not use old app-password guides. LOW for official API; MEDIUM for community `bbx` (.NET global tool, v1.0.0 on NuGet Aug 2, 2026). VERIFIED for Cloud API. UNVERIFIED for Bitbucket Data Center API (not separately checked).
+- **SGLang — high-throughput serving engine (vLLM alternative)** — v0.5.21, Oct 2, 2026, port 30000, Apache 2.0. OpenAI/Anthropic-compatible server. LOW. VERIFIED.
+- **LM Studio / `llmster` — desktop app + headless server** — `lms` CLI, `llmster` daemon, port 1234, OpenAI+Anthropic-compatible. LOW-MEDIUM — app is proprietary/closed-source (free for commercial use since July 2025), CLI/SDKs MIT. VERIFIED (LM Studio 0.4.x; 0.4.1 added Anthropic `/v1/messages`).
+- **Google Gemini API — first-party API (was missing from carried-over list)** — ai.google.dev/gemini-api/docs/pricing. Chat/completions; the only major first-party API with an ongoing free tier. API key; billing link for paid tier. Free-tier data-use terms are a gate to note. LOW. VERIFIED (free tier "Free of charge" on Flash/Flash-Lite/2.5 models; Gemini 4 Argon not free, $2/$10 through Nov 30, 2026, then $4/$20 Dec 1). **Flag:** Gemini CLI free tier is NOT the same thing — Gemini CLI free (1,000 req/day Google sign-in) ended June 18, 2026, replaced by Antigravity CLI. Do not conflate.
+- **Hugging Face Inference Providers — router `https://router.huggingface.co/v1`** — hosted inference for 130+ open-weight models via one HF token, OpenAI-compatible chat endpoint, routing to Groq/Cerebras/Together/Fireworks/etc. HF token with Providers permission; paid credits/PRO or own provider key. LOW. VERIFIED. **Dead correction:** legacy Serverless Inference API `api-inference.huggingface.co` is decommissioned — requests return 410 Gone / 404.
+- **Cloudflare `cf` CLI — new unified CLI (beta, Sep 28, 2026)** — 2,900+ commands across zones, DNS, storage, security, Workers, vs Wrangler's ~280 Workers-focused paths; `cf migrate` converts a Wrangler config. Cloudflare account sign-in / token. LOW (official), MEDIUM for production reliance — beta, commands/config can change before stable. VERIFIED (cf 1.0.0-beta.6, Oct 1, 2026).
+- **Portkey AI Gateway — managed/self-hosted gateway (LiteLLM alternative)** — 250+ models, observability, caching, guardrails. Portkey account / own provider keys. LOW-MEDIUM — acquisition changes future direction (acquired by Palo Alto Networks, closed May 29, 2026); verify current ownership/terms before adopting. VERIFIED as existing; future roadmap UNVERIFIED.
+- **Envoy AI Gateway (now Agent Router) — Kubernetes-native gateway** — 1.0 Jun 23, 2026; renamed Agent Router, moved to Agentic AI Foundation Sep 10, 2026; v1.2.0 Oct 7, 2026. Apache 2.0. LOW. VERIFIED.
+- **AWS ECR Public Gallery / Google Artifact Registry — Docker Hub official-image mirror** — e.g. `public.ecr.aws/docker/library/node:22-slim`. No login for public ECR pulls. LOW. VERIFIED, with the stated limitation (official images only, not arbitrary third-party images).
+- **Floci — free open-source local AWS/Azure/GCP emulators (LocalStack community-edition replacement)** — local AWS-shaped services, no cloud account; `floci-az` (Azure, port 4577), `floci-gcp` (GCP, port 4588); local web console at localhost (`/_floci/ui`). None locally. LOW-MEDIUM — new community project (2026), no SLA. **URL UNVERIFIED — no citable non-workers.dev URL returned; verify the GitHub repo path (`floci-io/floci`) before use.** VERIFIED as existing per search text only.
+
+### Dead / retired — corrections (not live entries)
+Hugging Face Text Generation Inference (TGI) — maintenance mode Dec 2025, repo read-only Mar 21, 2026; HF directs users to vLLM or SGLang. GitHub Models — playground/catalogue/inference API closed Jul 30, 2026; GitHub points users to Azure AI Foundry or GitHub Copilot. Legacy HF Serverless Inference API — decommissioned, 410/404. npm CouchDB streaming replication — deprecated Feb 2025; paginated JSON changes API only.
+
+---
+
+## 8. Government / courts / health / utilities
+
+### Carried over — live / VERIFIED (21)
+- **PACER → CourtListener + RECAP Archive (Free Law Project)** — courtlistener.com; api.rest v4 at courtlistener.com/api/rest/v4. Federal dockets/opinions already bought/shared; 9M+ opinions, 10M+ in newer guides, RECAP archive, oral arguments, judges, Citation Lookup API. Free web search, no login; API needs free account/token. Since May 7, 2026 all APIs incl. PACER APIs open to any account. Free tier now 5 req/min, 50/hr, 125/day (was 5,000/hr); membership from $10/mo raises it. LOW. Flag retained: fee-exempt PACER users must not feed RECAP; D. Mass. reminder. VERIFIED.
+- **Federal opinions / legislation → govinfo (GPO)** — govinfo.gov. Official federal opinions, bills, Federal Register, Congressional Record, US Code. Public, no login. LOW. VERIFIED (119th Congress bill, last action Sep 14, 2026; GovInfo 10th anniversary Feb 2026; 8.7B retrievals in 10 years, US Courts Opinions most-retrieved collection).
+- **Federal dockets → Justia Dockets** — dockets.justia.com. Free federal district/appellate docket search, 2004–present; party/court/type/date; opinions only, filings link to PACER. No login. LOW. VERIFIED (case filed Aug 18, 2026, live).
+- **State + federal court data → UniCourt Enterprise API / Trellis (PAID)** — structured state+federal data, analytics. UniCourt self-serve $59/mo Personal / $199 Professional / $399 Premium; Enterprise API $2,250/mo (sales-quoted, API is Enterprise-only). Trellis raised rates end-Sep 2026: now $80/mo Personal / $140 Research / $210 Research+Judge Analytics (was $69.95/$129.95/$199.95); single-state per tier, metered views. Login: yes, paid. MEDIUM (paid commercial reuse; no sealed/expunged records). VERIFIED.
+- **Florida → County clerk free portals + CaseAccess (paid)** — Palm Beach eCaseView (appsgp.mypalmbeachclerk.com/eCaseView/ — free guest access, civil/criminal/traffic, images from late 2008); Miami-Dade CJIS (www2.miamidadeclerk.gov/cjis/CaseSearch.aspx) + OCS (www2.miamidadeclerk.gov/ocs/); Broward (browardclerk.org/web2 — public case search caps at first 200 matches, first+last name required); Monroe (monroecounty.courtflorida.us/court-records.html; portal cr.monroe-clerk.com/Attorney/SearchCriteria — caps 500 matches, scanning from 2007). **CaseAccess update — launched Oct 12, 2026**, $20/mo or $200/yr, via Florida Courts E-Filing Portal (myflcourtaccess.com), CCIS-sourced, all 67 counties, daily updates, requires active E-Filing Portal account; research tool only, NOT the official record. No login for county guest portals; yes + paid for CaseAccess. LOW for official portals; MEDIUM for CaseAccess. Flag retained: Florida Ch. 119 — do not republish exempt/sealed content. VERIFIED.
+- **IRS nonprofits (public only) → IRS Tax Exempt Organization Search (TEOS) + bulk downloads** — irs.gov/charities-non-profits/tax-exempt-organization-search. Pub. 78, Form 990 series, revocation list, determination letters; bulk ZIP/XML, monthly. No login. LOW. VERIFIED.
+- **IRS nonprofits → ProPublica Nonprofit Explorer API** — projects.propublica.org/nonprofits/api/v2/search.json. ~3M returns, 14M+ filing documents from 2001, search by name/EIN/NTEE/state/revenue. No login (rate-limited; bulk via IRS BMF/TEOS instead). LOW. VERIFIED (probe Sep 26, 2026: search + org endpoints → 200).
+- **IRS IRIS A2A / e-Services transcript APIs — FLAG, NOT a public alternative.** Requires Transmitter Control Code + API Client ID + ATS testing; taxpayer consent (Forms 2848/8821 or IVES 4506-C). Do not use for anyone's personal return without that authorisation. HIGH if misused. VERIFIED (as a restriction).
+- **SSA personal benefits → NO public alternative found.** No API gives an agent another person's Social Security record. Public SSA statistics via data.gov only. Update: old SSA username/password retired — SSA removed that sign-in Jun 7, 2025; now Login.gov or ID.me only. Login: yes, human + MFA/identity proofing — hard stop. VERIFIED (as a gap).
+- **CMS open data → data.cms.gov + Provider Data Catalog** — data.cms.gov/api-docs. Medicare/Medicaid provider data, hospital/nursing-home/physician quality, Marketplace plans, Medicaid/CHIP. No API key required; max page 5,000 rows. LOW. VERIFIED. Update: **Sep 29, 2026 Data.CMS.gov published Public API Open Data Catalog at `/data.json` using DCAT-US v3.0**; legacy DCAT-US 1.1 endpoint available until Mar 31, 2027 at `/v1-1-data.json`.
+- **CMS → Finder API + Marketplace API** — developer.cms.gov/finder-api/; developer.cms.gov/marketplace-api/. Finder.Healthcare.gov off-Marketplace plans; Marketplace API powers HealthCare.gov plan/provider/coverage data. API keys: apply via form, CMS review, 1,000 req/min, keys expire every 60 days (auto-reissued by email). No login for public plan browsing; API key (free, approved) for API. LOW. VERIFIED.
+- **NPPES NPI Registry API (CMS)** — npiregistry.cms.hhs.gov/api/?version=2.1. Provider name, NPI, specialty/taxonomy, practice address/phone. Public business-contact data, not patient data, not HIPAA-covered. Free, no key, no signup. LOW. VERIFIED.
+- **openFDA API** — api.fda.gov. Drug/device/food adverse events, recalls, labels, NDC directory. No auth, 240/min, 1,000/request, 25,000 offset cap; adverse events do not prove causation. LOW. VERIFIED.
+- **ClinicalTrials.gov API v2** — 480k–500k+ studies, public domain, no auth. LOW. VERIFIED.
+- **CDC Socrata datasets (data.cdc.gov), PubMed E-utilities** — CDC disease surveillance, mortality, vaccination, BRFSS/NHANES; PubMed/PMC literature. No login; free Socrata app token raises limits (1,000 req/hr without token). LOW. VERIFIED (PMC developers page last modified Aug 20, 2026).
+- **Epic → open.epic.com sandbox — FLAG, LIMITED.** Free self-service sandbox, synthetic test patients only; production per-hospital approval. NOT a public alternative for real charts. Update: Nov 2026 release adds Bulk FHIR on reporting servers; FHIR notifications for admission/discharge; public MCP server for Open.Epic docs coming. Login: yes for real patient data, patient-authorised only (HIPAA). LOW for sandbox; HIGH if used to access real charts without patient authorisation. VERIFIED (as limited).
+- **CMS Blue Button 2.0 / BCDA / AB2D — FLAG, NOT public alternatives.** Blue Button 2.0 is beneficiary-authorised FHIR R4; BCDA ACO/APM-only; AB2D Part D sponsor-only. VERIFIED (as restrictions).
+- **USPS → USPS official APIs (developers.usps.com)** — Address API v3 (ZIP+4, standardisation), Tracking APIs, Prices, Labels. **DEAD sub-component: legacy Web Tools retired Jan 25, 2026** — confirmed by USPS itself and multiple 2026 guides. New APIs: OAuth 2.0, `apis.usps.com` (prod) / `apis-tem.usps.com` (test), Addresses 3.0 / Tracking 3.2, default 60 calls/hr per API, tokens 8 hrs. Address API requires signed licence + paid subscription as of Jul 12, 2026; for validating addresses captured through your own mailing/shipping process, NOT for sourcing addresses to populate a database. Tracking access tightened Apr 1, 2026 (Mailer ID / merchant token). LOW within terms. VERIFIED (new APIs live; Web Tools dead).
+- **Utilities → Utility public outage maps / grid-data portals** — FPL Power Tracker (fpl.com/storm/map-faq.html, updates every 15–30 min); PPL (omap.prod.pplweb.com/OMAP); Duke (usoutage.com/duke-energy/ — Nov 7, 2026 05:56 AM: 4,614 active outages). No login, no customer data. LOW for public data only. VERIFIED.
+- **Utilities → Green Button Download My Data (customer-mediated only) / Connect My Data** — customer logs in and downloads own XML, or OAuth Connect My Data where offered. **Correction from this refresh: FPL does NOT offer Green Button Download or Connect My Data, nor any formal ESPI/OAuth API** — Business Energy Manager (Excel export, 15-min interval, up to 2 years) is the route. **Duke Energy Florida also does NOT offer Green Button** — portal view-only / PDF bills only. Duke Energy Progress (NC) Green Button planned ~Jan 2027 under NCUC-approved program (July 2025, 18-month implementation). PPL / Duke in other jurisdictions: Green Button Connect supported via Youtilitics list. Login: yes, customer-mediated only; agent must not log in as them or scrape the portal. LOW if customer-mediated; MEDIUM-HIGH for unofficial SmartHub scrapers (flagged, not recommended — "may violate NISC terms" for at least one co-op). VERIFIED (with FPL/Duke-Florida correction).
+- **EIA / federal energy open data — NOW VERIFIED (was UNVERIFIED in Nov 1 sweep).** eia.gov/opendata/documentation.php; api.eia.gov/v2/…?api_key=…. Oil/gas/power prices, stocks, production, retail electricity rates; 408k series. API v2: free key (email registration), 5,000 rows/request, public domain. LOW. VERIFIED (APIv2 patch notes Mar 2026 v2.1.12, Jan 2026 v2.1.11; bulk manifest AEO 2026 updated Mar 26, 2026; EBA updated Nov 6, 2026).
+
+### New added (10)
+- **PACER Case Locator API (official, NEW) — VERIFIED.** Federal case/party search via REST (XML/JSON), token from username+password. LOW (official). **Fee change: $0.10 → $0.12/page effective Jan 1, 2027 for 5 years; quarterly exemption $30 → $40.** Also: PACER password-standard enforcement from Aug 17, 2026 (users not updated in 18 months randomly selected to update). Login: yes, PACER account, paid per page.
+- **Congress.gov API (Library of Congress, NEW) — VERIFIED (web); API endpoint UNVERIFIED.** Bills, laws, committee reports/hearings, Congressional Record, members, US Code / Constitution Annotated, 1973–present (full bill text 1989–present). No login for web. LOW. No API key/endpoint URL was returned verbatim — list as web/API via congress.gov, do not invent endpoint path.
+- **Oyez / Oyez API (SCOTUS, NEW) — VERIFIED.** Supreme Court case summaries, vote breakdowns, full-text opinions (via Justia), oral-argument audio/transcripts since 1955, justice bios. Data from the public Oyez API (`api.oyez.org`); no account or API key required. LOW.
+- **CMS Open Payments (NEW) — VERIFIED.** Every payment from drug/device companies to physicians ("Sunshine Act"), searchable by physician/company/state/payment type. No login. LOW.
+- **NIH RePORTER (NEW) — VERIFIED.** reporter.nih.gov. All NIH-funded grants/projects/publications/patents/clinical trials, ~$40B/yr funding. No auth. LOW.
+- **CDC WONDER API (NEW) — VERIFIED.** Mortality/disease databases via WONDER, plus Environmental Public Health Tracking Network API, PHIN VADS. No login stated (key via data.gov for some). LOW.
+- **USPS NCOA+ API (NEW, Oct 2026) — VERIFIED.** Licensed National Change of Address: returns recipient's current address on NCOA match; can meet Move Update requirements. Login: yes, licensed users only. LOW if licensed; do not use to source addresses for a database.
+- **Epic Individual Access Services (IAS) via TEFCA + MyChart Central (NEW) — VERIFIED.** Patient-chosen apps retrieve copies of medical records from TEFCA participants via FHIR, with patient authorisation; MyChart Central lets patients share from all linked organisations at once. Login: yes, patient-authorised only — HIPAA hard stop. LOW if patient-authorised; HIGH otherwise.
+- **DocketRadar — Florida multi-county court extension (NEW) — UNVERIFIED.** Palm Beach eCaseView, Miami-Dade OCS + CJIS, Broward Odyssey, from one unified interface; browser extension, reads public court records on official portals. No login stated for public records. MEDIUM-HIGH (third-party extension, unofficial; verify ToS/privacy before use; no sealed/exempt content). Liveness not live-checked; extension-store status not confirmed.
+- **Youtilitics — Green Button aggregator (NEW) — VERIFIED (as listed; FPL not on its Green Button list).** youtilitics.com/faq. Customer-authorised Green Button Connect My Data download/analysis incl. Duke Energy and PPL Electric Utilities Corp; 3-day trial then credits/purchase. Login: yes, customer-authorised Green Button link. MEDIUM (third-party, paid after trial; customer-mediated only).
+- Also flagged, NOT counted as new (UNVERIFIED, for coordinator decision): Healthcare.gov unauthenticated `marketplace-int.api.healthcare.gov/api/v1` JSON API (public SPA backend, Akamai-fronted, accepts requests with `Origin: https://www.healthcare.gov` or no Origin) — MEDIUM-HIGH / UNVERIFIED, unofficial, undocumented, could break; do not present as official. Documented route is Marketplace API with key.
+
+Gates / hard stops: PACER account + per-page fee; SSA / IRS personal / VA / My HealtheVet: Login.gov or ID.me (+ CLEAR for VA/Medicare in 2026) — human identity proofing + MFA; old SSA usernames retired Jun 7, 2025, old My HealtheVet/DS Logon retired Mar 4, 2025 / Sep 30, 2025. Patient charts (Epic/MyChart, Blue Button, BCDA/AB2D): HIPAA — patient-authorised only. Florida courts: Ch. 119 — do not republish exempt/sealed content. USPS Address API: licensed + paid, not for sourcing addresses. Medicare.gov: new Login.gov/ID.me/CLEAR options from Mar 3, 2026; old Medicare passwords still work for now.
+
+---
+
+## 9. Messaging / creator
+
+### Carried over — verified live (15, plus 1 confirmed-none)
+- **WhatsApp → Official WhatsApp Business Platform / Cloud API (Meta)** — business messaging, templates, chatbots for support/bookings/FAQs. Own business number only; personal-account automation NOT covered. Meta Business account, app registration, phone-number registration, access token. LOW if compliant. **Update:** confirmed Oct 22, 2026 reading of Meta docs — general-purpose AI assistants banned as primary product since Jan 15, 2026 (Meta Terms §4.7), EEA exception from Mar 11, 2026; a business's own customer-service bot remains allowed. Per-message charging resumed Oct 1, 2026: first 1,000 service replies/month free per number, then charged. On-Premises API dead since Oct 23, 2025 — Cloud API is the only official API. VERIFIED. Gates: pricing, template approval, 24h customer-service window, quality-rating limits.
+- **WhatsApp → Unofficial Baileys / whatsapp-web.js / WhatsMeow / WAHA / Evolution API** — same WhatsApp account via linked-device / WhatsApp Web. QR/linked device, own phone number. HIGH — ToS violation, number restriction/ban. Listed for completeness, NOT recommended. VERIFIED (as existing, still discussed Oct 2026).
+- **Telegram → Official Bot API via @BotFather** — core.telegram.org/bots/api; api.telegram.org/bot<token>/METHOD_NAME. Bots in chats/channels they are added to. Bot token from @BotFather; no phone number for the bot itself. LOW. **Update:** Bot API 10.3 released Aug 24, 2026 (10.1 Jun, 10.2 Jul 2026). Limits ~1 msg/sec/chat, ~20/min/group, ~30/sec bulk; paid broadcasts raise to 1,000/sec at 0.1 Stars/msg above free amount. VERIFIED.
+- **Telegram → Official client library TDLib / Telegram API (MTProto)** — core.telegram.org/api. Full client behaviour with a real account. Phone + api_id/api_hash from my.telegram.org. LOW-MEDIUM — official library, still subject to spam/flood limits. VERIFIED.
+- **Telegram → Unofficial MTProto: Telethon / Pyrogram** — full account access (history, members, media, large files 2 GB regular / 4 GB Premium). Own account, api_id/api_hash + phone; session file = credential. MEDIUM-HIGH — userbot ToS weight, FloodWait, account ban if aggressive; read-only/throttled, own account only. Telethon 1.44.0/1.45.0 (Sep 2026). VERIFIED.
+- **Telegram → Public frontend t.me/s/<channel>** — public channels only — last ~20 posts, text, images, view counts, subscriber count, timestamps; `?before=<post-id>` pages backwards. Plain HTML, no login, no key. LOW for reading Telegram's own public preview; MEDIUM if scraped aggressively (429s, retention ceiling, no comments/replies, private channels/groups have no preview). VERIFIED (Oct 10, 2026).
+- **Signal → Unofficial only: signal-cli + signal-cli-rest-api** — links as a secondary device via QR, own phone number required; separate number recommended. MEDIUM — no official bot platform, unofficial client, account/number risk if abused; never for bulk/spam. signal-cli 0.14.6 cited Oct 2026. VERIFIED — still no official Signal API as of Jul–Oct 2026 sources.
+- **Discord → Official Bot API + Gateway + webhooks** — bots in servers that invited the bot, read/send within scopes; privileged-intent review for large/member data. Bot token via Discord Developer Portal. LOW if compliant; honour 429/retry_after. **Self-bots HIGH** — automating a normal user account is forbidden, account termination; discord.js has not supported user-token login since v12. VERIFIED.
+- **Slack → Official Slack Web API + Events API** — messages, channels, files, users in authorised workspaces; Events API pushes in real time. Slack app, OAuth token. LOW if compliant. **Update:** since May 29, 2025, `conversations.history` / `conversations.replies` for new non-Marketplace commercial apps = 1 req/min, 15 objects/request; Events API = 2xx within 3 sec, up to 3 retries, 30,000 events/workspace/app/hour, auto-disable below 5% success. RTM deprecated. VERIFIED.
+- **Gmail → Official Gmail API (OAuth2) + IMAP/SMTP with app passwords (2FA accounts)** — own mailbox only — search/read/send/labels, history/Pub/Sub push. Google Cloud project, OAuth2, restricted scopes need verification + annual CASA assessment for public apps. LOW — sanctioned route. Quota: 80,000,000 units/day/project threshold; over-threshold charging planned later in 2026, price unpublished, ≥90 days' notice promised. VERIFIED.
+- **Outlook → Microsoft Graph API (OAuth2)** — own mailbox/calendar/contacts. Entra ID app registration, OAuth2 (delegated or app-only). LOW. Standalone Outlook REST API deprecated, Graph is mandatory; ~10,000 req/10 min, 4 concurrent req/app/mailbox. VERIFIED.
+- **Patreon → Official Patreon API v2 (OAuth2)** — docs.patreon.com. Own campaign — members/pledges, identity, campaigns, tiers, webhooks. NOT browsing other creators' paywalled posts. OAuth client, creator account. LOW for own-account use. **Update:** Public API v1 retired Oct 7, 2026 — all v1 endpoints stopped responding that date. v2 is the only supported version. VERIFIED.
+- **OnlyFans → NONE for general developers (confirmed absence)** — no public API, no developer portal, no keys. HIGH for any unofficial route (see New below). No sanctioned mirror for patron-only/paywalled content. VERIFIED (absence confirmed, not dead — it never existed).
+- **Fanvue → Official (creator-side only): Fanvue App Store + official Fanvue OAuth API** — a creator's/agency's own chats, queue, PPV composer, posts, vault, subscribers, insights — with creator login + App Store subscription. KYC-verified creator, OAuth 2.0 app (Client ID/Secret, short-lived tokens); Fanvue does NOT use API keys per current developer docs, despite an older Help Centre API-key waiting-list article and a Feb 5, 2026 policy still describing an `X-Fanvue-API-Key` header. Do NOT create an app at anyone else's request / share secrets — Fanvue warned of social-engineering attempts Jan 2026. Base URL in sources: `https://api.fanvue.com`, auth `https://auth.fanvue.com`. LOW for the logged-in creator's own account. VERIFIED.
+- **Fanvue → Third-party "Fanvue API" platform apifanvue.com** — 200+ endpoints, MCP server, agency CRM/chat automation, ads tracking. Paid plan ($29/creator/month Scale plan cited; 7-day free trial). MEDIUM-HIGH — third-party, not Fanvue itself; verify it is actually Fanvue-authorised before relying on it; does not authorise accessing another creator's paywalled content. VERIFIED (site live, crawled 3 days before refresh).
+- **DeviantArt → Official DeviantArt OAuth API** — developers.deviantart.com. Deviations, users, comments, galleries, favourites; mature content requires logged-in account with mature-content enabled. Register app, OAuth2 (OAuth 2.0/2.1, PKCE required for new apps, refresh token 3-month expiry; API version 20240701). LOW — pace ~3 req/sec, honour 429s. Public web listings for all-ages works readable without OAuth (LOW-MEDIUM for public metadata/previews); bulk downloading originals against the author's download setting, or unblurring mature works without login, is not sanctioned. Note: official API has no search endpoint (per downloader docs, Oct 2026). VERIFIED.
+- **Twitch chat → Official Twitch Helix API + EventSub webhooks + IRC chat (with OAuth)** — live chat messages, streams, clips, moderation, with channel-owner/broadcaster-scoped tokens. Twitch developer app, Client-ID + OAuth. LOW if compliant — ~800 points/min. **Update:** PubSub fully decommissioned Apr 14, 2025; IRC remains functional but receives no new features, 100 concurrent channel joins cap in 2026; Twitch recommends EventSub (`channel.chat.message`) for reads + Helix `POST /chat/messages` for sends. No sanctioned VOD-chat-replay API; third-party VOD-chat scrapers via internal GraphQL MEDIUM-HIGH. VERIFIED.
+
+### New added (12)
+- **Messenger → Official Meta Messenger Platform (Send API + Conversations API + webhooks)** — Facebook Page messaging only — incoming messages/postbacks, Send API replies, private replies to comments, calling (GA Feb 2026). Facebook Page, Page access token, App Review for `pages_messaging`. LOW if compliant. 24-hour standard messaging window; HUMAN_AGENT tag = manual reply up to 7 days; CONFIRMED_EVENT_UPDATE / ACCOUNT_UPDATE / POST_PURCHASE_UPDATE tags return error 100 since Apr 27, 2026 — use utility templates / Marketing Messages API instead. Personal profiles and Groups cannot be automated (Groups API withdrawn Apr 2024). VERIFIED.
+- **Zoom → Official Zoom REST API v2 + Meeting SDK** — create/manage meetings, users, webinars, recordings, chat-in-meeting via SDK; embed full Zoom meeting in a web page (Meeting SDK Web, Component/Client View). Zoom Marketplace app, OAuth 2.0; SDK join needs signature/JWT. LOW if compliant. **Gate, new in 2026:** from Feb 23, 2026 / enforced Mar 2, 2026, Meeting SDK apps joining meetings outside their own account must attribute to a user — On-Behalf-Of (OBF) token or ZAK token; anonymous cross-account joins no longer supported. VERIFIED (Meeting SDK Web 6.10.0, Oct 22, 2026; changelog last update Oct 30, 2026).
+- **Microsoft Teams → Microsoft Graph API for Teams (chat/channel messages)** — graph.microsoft.com/v1.0. List teams/channels/chats, read/send messages, members, change notifications/webhooks, delta query (last 8 months). Entra ID OAuth, work/school account. LOW. Sending is delegated-only (as signed-in user); app permissions send only via migration flow (`Teamwork.Migrate.All`). Teams message APIs unmetered since Aug 25, 2025 (no Azure billing). No public embed/iframe of a Teams channel exists. VERIFIED.
+- **Substack (creator side) → Official Developer API (Apr 2026) + Official MCP server (Jul 2026) + RSS** — Developer API = token-authenticated lookup of *public* creator profiles by LinkedIn handle only, approval-gated. MCP server = read-only access to own publication's dashboard metrics, traffic, revenue, settings. RSS = free posts in full per publication (`<publication>.substack.com/feed`), paid posts preview-only. MCP — OAuth 2.1, must be admin of a **Bestseller** publication (hundreds of paid subscribers). Developer API — application + Terms-of-Use approval. LOW for the official routes. **Hard limits:** MCP cannot publish posts, send Notes, or modify the account; no public write API, no webhooks, no official Zapier. Undocumented site JSON endpoints (`/api/v1/archive`, `/api/v1/posts/{slug}`) and cookie-based tools (python-substack, substack-pp-cli) are MEDIUM-HIGH — unofficial, break on frontend changes, session-cookie use. VERIFIED.
+- **Ko-fi → Official Ko-fi webhook API (payment events only)** — payment notifications only — donations, subscriptions, commissions, shop orders — via HTTP POST to creator-configured webhook URL, with verification token. Creator account to configure webhook at ko-fi.com/manage/webhooks. LOW. Scope is payment-made events only — cannot notify membership-ended, refunds, posts, messages, or account management. No general REST API. VERIFIED.
+- **Buy Me a Coffee → Official BMC API + webhooks** — own account — supporters/coffees, memberships, extras/digital products; webhooks for `coffee`, `membership.*`, `recurring_donation.*`, purchases/refunds, with signing secret and OpenAPI 3.1 payload spec. Creator account, API token from developer dashboard; webhook signing secret per webhook. LOW. Cannot create/update products programmatically (per 2026 guides); webhook auto-disabled after 10 consecutive failed deliveries. VERIFIED.
+- **Gumroad → Official Gumroad API v2 (REST + OAuth 2.0)** — api.gumroad.com/v2/; docs at app.gumroad.com/api. Own account — products, sales, subscribers, offer codes, license keys, customers, user account; license verification endpoint. OAuth application / manual access token. LOW. REST-only, no official SDK; webhook/resource-subscription (Ping) details not confirmed from official docs — treat webhook coverage as UNVERIFIED within this otherwise verified entry. VERIFIED (API v2 itself).
+- **Fanvue → Official Fanvue MCP server** — same official Fanvue API surface (chats, posts, subscribers, insights) exposed to Claude/ChatGPT/Cursor via MCP, OAuth-authorised. Fanvue OAuth credentials, KYC-verified creator. LOW for Fanvue's own MCP; MEDIUM for the third-party `fanvue-mcp` PyPI wrapper (0.1.0, Nov 2025, no provenance) — use Fanvue's own MCP where available. VERIFIED (existence confirmed by two Oct 2026 sources; Fanvue's own MCP endpoint URL not returned verbatim — do not invent it).
+- **OnlyFans → Third-party "OnlyFans API" vendors (e.g. CreatorAPI) — HIGH, NOT recommended.** creator-api.com. Native/signed access to OnlyFans (and Fansly) behind one REST interface + MCP server — fans, messages, earnings, exports, webhooks — on behalf of an account that granted access. Account connect (passwordless connect / managed IP per account per vendor), vendor key, free trial 1,000 credits cited. HIGH — no official API exists, so every vendor is unofficial/reverse-engineered; ToS violation, account suspension, IP ban, copyright exposure for paid content; vendor "zero bans" claims are marketing, unverified. OnlyFans help centre still says creators "may not directly integrate AI chat bots". VERIFIED (vendors exist and are trading in 2026).
+- **Discord → Discord MCP servers (wrapper over official Bot API, e.g. discord-agent-mcp)** — 71 tools across 12 categories over the sanctioned Bot API — same visibility limits as the bot (invited servers only, no personal DMs). Bot token only, never a user token/password. LOW if bot-token based; HIGH if any MCP server asks for a personal account token (walk away per source). Global cap 50 req/sec/bot; 10,000 invalid requests (401/403/429) in 10 min = temporary IP ban. VERIFIED.
+- **Outlook → Microsoft Work IQ Mail/Calendar MCP servers (Agent 365, preview)** — 10 mail tools + 11 calendar tools, built directly on Graph Mail/Calendar APIs; no contacts, folders, inbox rules, attachments, or To Do. Entra ID OAuth, IT-admin-registered enterprise app. LOW-MEDIUM (official but preview). **Gate:** Microsoft 365 Copilot licence required (~$30/user/month cited); preview, tool names can change; NO personal Outlook.com/Hotmail support — organisational tenants only. VERIFIED as preview/GA-licensed product (not as a general-purpose route).
+- **Gmail → Google Gmail MCP server (Developer Preview) — UNVERIFIED.** `gmail.readonly` + `gmail.compose` scopes, own OAuth client marked as AI-powered agent client. Developer Preview Programme membership. MEDIUM — preview, not generally available; AI-agent client marking required from Nov 11, 2026. Do not count as a live route until re-checked after Nov 11, 2026.
+
+Gaps, not invented: No Redlib-style public frontend/mirror for Discord, Slack, Signal, WhatsApp, Messenger, Zoom, or Teams. No official API for Fansly (confirmed via CreatorAPI source: "Neither OnlyFans nor Fansly ships a public API"). No verified general-purpose Ko-fi REST API beyond payment webhooks; no verified Gumroad webhook documentation from official docs.
+
+---
+
+## 10. Gaming / sports / betting / entertainment
+
+### Carried over — live (15 of 17)
+- **Steam → Steam Web API (official)** — api.steampowered.com. Game details, player counts, news, public-profile libraries/achievements. Public data only; private profiles need owner's key/consent. Key at steamcommunity.com/dev/apikey. LOW. VERIFIED — keyless endpoints confirmed live Nov 2, 2026: `ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=730` returned CS2 `player_count` 399,360. **CHANGE since Nov 1:** old reviews endpoint `store.steampowered.com/appreviews/{appid}?json=1` **disabled Oct 22, 2026**. Replacement: `https://api.steampowered.com/IUserReviewsService/GetAppReviews/v1/?appid={appid}`. Gates: API key for profile/match-history methods; rate limits (~200 req/5 min cited for appdetails).
+- **Steam → SteamDB, SteamSpy, SteamCharts** — steamdb.info, steamspy.com, steamcharts.com. Player counts, price history, patch/build history, sales; SteamSpy ownership/sales estimates; SteamCharts concurrent-player history. LOW-MEDIUM. VERIFIED (Oct 11, 2026 guide); SteamDB full history needs sign-in.
+- **Steam → IGDB (Twitch/Amazon), RAWG** — api.igdb.com, rawg.io. Game metadata (IGDB 280K+ titles, Twitch client ID/secret, free dev credentials); RAWG 300K+/800K+ game database, ratings, store links incl. Steam/Epic/GOG, free API key tier. LOW. **UNVERIFIED (no fresh Nov check)** — carried over as-is, do not claim re-verified.
+- **Roblox → NO public-catalog alternative found (was a gap) — NOW PARTIALLY FILLED, see new entries below.** Open Cloud / Creator APIs remain own-experience only, not a general catalog read.
+- **DraftKings / FanDuel / BetMGM / Caesars → The Odds API** — the-odds-api.com. Aggregated odds from 100+ bookmakers incl. DraftKings, FanDuel, BetMGM; **Caesars (`williamhill_us`) is paid-plans only**; 500 free credits/month. Free API key. Odds only, no betting, no account access. LOW-MEDIUM. VERIFIED (bookmaker list crawled 3 days before refresh; review dated Nov 2, 2026). Gambling-data flag applies.
+- **DraftKings / FanDuel → balldontlie** — balldontlie.io. Odds incl. FanDuel/DraftKings/Caesars moneylines (tennis/NBA/NFL) plus scores/stats, 20+ leagues; free tier ~5 req/min. LOW-MEDIUM. **UNVERIFIED (no fresh Nov check).**
+- **DraftKings / FanDuel → SportsDataIO / Goalserve / API-Sports (aggregators)** — licensed odds + scores feeds, generally paid/trial. MEDIUM. **UNVERIFIED (no fresh Nov check).**
+- **Polymarket → Gamma API (official, public, no auth)** — gamma-api.polymarket.com. Market/event metadata, prices, history. No login for reads. LOW. VERIFIED (three anonymous Gamma GETs verified; docs checked Oct 8, 2026). Note: CLOB V2 landed Apr 28, 2026; collateral moved USDC.e → pUSD; Polymarket US relaunch live since Dec 2025 is KYC-gated, narrower, varies by state.
+- **Polymarket → CLOB API (official)** — clob.polymarket.com. Public order books; trading needs wallet/ECDSA auth + KYC in US venue. LOW. VERIFIED. Read-only use only.
+- **Kalshi → Kalshi Trade API (official)** — public market data (markets, order books, candles); authenticated endpoints need API key + KYC. CFTC-regulated; read-only use only. LOW. VERIFIED, with host change: **existing list says `api.elections.kalshi.com/trade-api/v2`. Current source (Oct 8, 2026) uses base URL `https://external-api.kalshi.com`. Treat the old host as UNVERIFIED/superseded — verify before use.** Docs: docs.kalshi.com.
+- **ESPN → ESPN unofficial site API** — site.api.espn.com/apis/site/v2/sports/{sport}/{league}/scoreboard. Scoreboard, summary, teams, standings; no key. No login. MEDIUM-HIGH (unofficial/undocumented — can change without notice; private fantasy leagues excepted). VERIFIED (live pull Sep 18, 2026, updated Nov 3, 2026; tested Nov 2026). **CHANGES since Nov 1:** date-range queries (`dates=YYYYMMDD-YYYYMMDD`) now return HTTP 400 — retired; single-date, month, and year forms still return 200. `cdn.espn.com` host retired Aug 30, 2026; everything now on `site.api.espn.com`. Site 403s requests that claim to be a browser — use curl/python-requests-style User-Agent. 100-event silent cap unless `limit=` raised.
+- **ESPN / SofaScore substitutes → balldontlie, SportsDataIO, TheSportsDB, The Odds API** — licensed/free scores-and-stats APIs covering the same leagues, but none republishes SofaScore's own ratings/lineups data. Substitutes, not mirrors; SofaScore's terms still prohibit scraping SofaScore itself. LOW-MEDIUM. VERIFIED (via The Odds API only; others carried over).
+- **IMDb → IMDb Datasets (official, free, non-commercial)** — datasets.imdbws.com. Daily TSVs: titles, ratings, principals, companies. Best lawful IMDb substitute; no reviews/full cast bios. LOW (non-commercial). VERIFIED (by corroboration, updated ~Nov 7, 2026: "IMDb has never had a public API — it sells bulk datasets… that is the entire offering").
+- **IMDb / Rotten Tomatoes → TMDB API** — themoviedb.org / api.themoviedb.org. Free key, cast/crew, posters, ratings (TMDB score only, not IMDb/RT scores). Commercial use needs TMDB's paid terms/logo compliance. LOW. VERIFIED (by corroboration).
+- **IMDb / Rotten Tomatoes / Metacritic → OMDb API** — omdbapi.com. Title/IMDb-ID lookup returning IMDb, Rotten Tomatoes and Metacritic values in one Ratings array; 1,000 req/day free. Free API key by email. MEDIUM (personal/non-commercial, CC BY-NC 4.0; posters for patrons only). VERIFIED.
+- **IMDb / Rotten Tomatoes → amodb (third-party)** — amodb.dev. TMDB- + OMDb-compatible API returning IMDb/RT/Metacritic/Kinopoisk ratings in one call. MEDIUM. **UNVERIFIED (no fresh Nov check)** — verify licensing before commercial use.
+- **Epic Games Store → IGDB / RAWG (above)** — game metadata and store links including Epic listings, but neither reproduces Epic store pricing, free-game rotation, or account/library data. Gap was flagged; now partially filled by new entries below. LOW. UNVERIFIED (same as IGDB/RAWG above).
+
+### New added (23)
+- **GOG → GOG Catalog API v2 (official, public, no key) — VERIFIED.** `https://api.gog.com/v2/games/{id}?locale=en-US`; catalog search at `https://catalog.gog.com/v1/catalog`. Game/product metadata, prices endpoint, availability, release dates. No login for catalog reads. Library/downloads need OAuth login (auth.gog.com). MEDIUM (undocumented — use v2, not v1). GOG dev confirmed v1 `/products/` endpoint is effectively end-of-life (not recommended) and **v2 `/games/` is preferred** (forum post Mar 27–Apr 3, 2026).
+- **GOG → GOG GamesDB (official, public, no auth) — VERIFIED.** `https://gamesdb.gog.com/platforms/gog/external_releases/{id}`. Cover, summary, genre metadata per game. No login. MEDIUM.
+- **itch.io → itch.io Serverside API (official) — VERIFIED.** api.itch.io/profile/games, /profile/owned-keys, /collections/{id}. **Your own account only** — your uploaded games, owned keys, purchases, collections. All endpoints require auth (bearer token / OAuth 2.0). LOW. NOT a public catalog read. Gap for general itch catalog remains except next entry.
+- **itch.io → itch.io public browse feeds + per-game data.json (unofficial) — VERIFIED.** Public game discovery via browse feeds (fixed URL segment order, 10 valid genre slugs), public collections (first page HTML, later pages JSON), each game's `data.json` (authors, tags, screenshots, links). ~1.76M game results per live index accessed Oct 29, 2026. No login for public browse. MEDIUM-HIGH (unofficial, 429-prone, no SLA — serialize requests with gaps + caching).
+- **Epic Games Store → Free Games Promotions feed (official, no auth) — VERIFIED.** `https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=US&allowCountries=US`. Current + upcoming weekly free games with dates, usual price, publisher. No login for the feed. Claiming a game needs an Epic account (hard stop — no account access). MEDIUM.
+- **Epic Games Store → Catalog Public Service (official backend, launcher client token) — VERIFIED.** `https://catalog-public-service-prod06.ol.epicgames.com/catalog/api/shared/namespace/{namespace}/bulk/items?id={id}&includeDLCDetails=true&country={CC}&locale={lc}`; also GraphQL at `https://graphql.epicgames.com/graphql` (undocumented searchStore). Catalog items/offers bulk lookup with DLC details, prices by country. Launcher client token (public client credentials), not a user account. Undocumented; library endpoints need a real user session — do not present as account access. MEDIUM.
+- **Xbox → Xbox storefront backend via Crawlora (paid third-party wrapper) — VERIFIED.** Full Xbox catalog browse/search, curated collections, per-title detail with trailers and Game Pass inclusion; reads `emerald.xboxservices.com`, the same host xbox.com's web app calls. Credential-free on Xbox's side; Crawlora API key required. MEDIUM-HIGH (paid service; do not present as official).
+- **Xbox → Xbox Games API (pazguille, open-source wrapper) — UNVERIFIED (stale).** Unified REST API — catalog browse/filter, search, game details/pricing, 13 Game Pass lists (`/api/catalog`, `/api/games`, `/api/search`, `/api/gamepass`); fetches from Microsoft services incl. `catalog.gamepass.com/sigls/v2`. Last crawl 362 days ago; repo may be stale. MEDIUM. Self-hostable; no Xbox login for catalog reads.
+- **Xbox → Xbox Game Pass catalog API (Microsoft, public) — VERIFIED (via wrapper docs).** `https://catalog.gamepass.com/sigls/v2`. Game Pass lists (new additions, leaving soon, publisher collections). No login for list reads. MEDIUM.
+- **Xbox → Xbox-WebAPI (Python library, account-gated) — VERIFIED (docs live).** Xbox Live account data (profile, presence, achievements, catalog search) via Microsoft Account auth, incl. 2FA support. **Login: yes — Microsoft/Xbox account + tokens required.** Own-account only; do not use another account's credentials. MEDIUM.
+- **PlayStation → PlayStation Store via Crawlora (paid third-party wrapper) — VERIFIED.** Search, product/concept detail, category/all-games browse, deals shelves, latest releases — normalized JSON, no login. 141,266 crawled SKUs in Oct 25, 2026 snapshot dataset. MEDIUM-HIGH. **Warning from source:** "Sony has no self-serve public API for it, and its terms are explicit about automated access." Public catalog/pricing only — never PSN account, purchase-history, or trophy data. Paid vendor key needed.
+- **PlayStation / Xbox / Switch → PSPrices (price tracker + REST API) — VERIFIED.** psprices.com. Price tracking + history/charts for 50,000+ games across PS5, Xbox, Switch (and PC), 50+ regions, price-drop alerts, edition/DLC tracking. Free plan: tracking + alerts, no sign-up. REST API for developers/businesses (B2B from $100/mo; unauthenticated demo returns up to 24 regional games, no pagination). No login for free tracking; Pro ($5/mo) adds PSN library/wishlist/trophy sync — that is own-account, optional. API excludes competing trackers/raw-data resale. LOW-MEDIUM.
+- **Nintendo Switch / PlayStation / Xbox / Steam → Deku Deals (price tracker, free) — VERIFIED.** dekudeals.com. Game price tracking, deal browsing, wishlist sale alerts, collection tracking; price history + all-time lows. Free, no paid plan noted. No login stated for web tracking. No API found — browser/app only. LOW-MEDIUM.
+- **Nintendo eShop → NTPrices eShop Game Price API v2 — VERIFIED.** ntprices.com/api/v2. Switch & Switch 2 prices, price history, live sales/discounts across 48 regions. Free tier: 1,000 req/month, 2 regions, up to 25 games per list request, non-commercial. Price history is paid (free plan returns 403 PLAN_UPGRADE_REQUIRED). **Legacy v1 deprecated, retires Dec 1, 2026 — use v2.** API key (free tier). No Nintendo account needed. MEDIUM.
+- **Nintendo eShop → nintendo-switch-eshop library (favna, unofficial Node wrapper) — VERIFIED.** Full game catalogs + search for **America and Brazil only** via Nintendo's backend Algolia index (`U3B6GR4UA3-dsn.algolia.net`). No login for America/Brazil catalog. MEDIUM. **Limitation:** v9.0.0 (Aug 29, 2025) removed Europe/Japan support — Nintendo added OAuth2 auth to those regional endpoints. America/Brazil remain no-auth.
+- **Nintendo eShop → Nintendo price API (official backend, no auth) — VERIFIED.** `https://api.ec.nintendo.com/v1/price?country={country}&ids={titleIds}&lang={lang}`. Per-title prices by country. No login. MEDIUM (undocumented; needs title IDs from the catalog sources above).
+- **Roblox → Roblox Games API (official web API, public, no auth) — VERIFIED.** `GET https://games.roblox.com/v1/games?universeIds=<id>`; `GET https://games.roblox.com/v2/groups/<groupId>/games?limit=50`. Public experience/game details by universe ID, group games, visits, player counts. No login. MEDIUM. **Limitation:** needs a universe/group ID — it is not a keyword search across the whole catalog. Pair with next entry or a third-party search. Fills the old "NO public-catalog alternative" gap for detail/stats, not for free-text search.
+- **Roblox → Roblox catalog API (official, login-gated in practice) + Crawlora Roblox search (paid wrapper) — VERIFIED (wrapper), catalog search login-gated.** (a) `https://catalog.roblox.com/v1/search/items` — avatar/marketplace catalog search, but requires `.ROBLOSECURITY` cookie + CSRF token per community docs — **do not use another account's cookie**; treat as account-gated. (b) Crawlora Roblox endpoints: experience search (`/roblox/search?q=`), public game detail, badges, rankings (top-trending, top-playing-now) — anonymous public catalog data, no Roblox account; sampled Oct 14, 2026, pull Oct 27, 2026 (94 experiences in top-trending). MEDIUM-HIGH. Login: none for the Crawlora wrapper (paid vendor key); cookie required for direct catalog.roblox.com search.
+- **SofaScore → SofaScore internal API (unofficial, undocumented) — HIGH, VERIFIED (but currently challenged).** `https://api.sofascore.com/api/v1/...` (e.g. `/api/v1/event/{eventId}`, `/api/v1/team/{teamId}/events/last/0`). Live scores, player ratings, heatmaps, lineups, standings, 20+ sports. No login technically, but Cloudflare 403s are a hard stop. Check on Sep 11, 2026 received HTTP 403 challenge responses; no official API, ToS prohibits automated access, bot detection enforced. HIGH — circumvents ToS/blocks; listed for completeness, NOT recommended. Licensed substitutes (API-Sports, Sportmonks, Sportradar, The Odds API) are the compliant route. SofaScore ratings/heatmaps are editorial products no licensed API republishes.
+- **Metacritic → Metacritic backend API (unofficial, no key) — HIGH, VERIFIED.** `backend.metacritic.com` (the JSON backend the frontend calls). Metascores, user scores, critic/user reviews, game/movie/TV detail. No API key, no auth — standard browser headers. HIGH — Fandom's Terms of Use explicitly name scraping/data-mining and restrict AI/ML training use; rate-limit (0.5–1s delays cited); backend can change without notice. Listed for completeness, NOT recommended. OMDb is the lawful ratings route.
+- **Metacritic → Fabric Origin Metacritic API (licensed, B2B) — VERIFIED.** Licensed Metacritic data — movies and TV only, **not games**. Paid subscription + developer approval required. LOW-MEDIUM. The only licensed Metacritic route found.
+- **Odds (all US books incl. BetMGM/Caesars) → OddsPapi — VERIFIED.** oddspapi.io. 300+ bookmakers (verified live May 2026), incl. DraftKings, FanDuel, BetMGM, Caesars, BetRivers, Hard Rock, BetParx, theScore Bet, Circa; free tier with free historical data; `/v4/bookmakers` endpoint. API key (free tier). Odds only, no betting. MEDIUM. Gambling-data flag applies.
+- **Odds (all US books incl. BetMGM/Caesars) → SportsGameOdds — VERIFIED.** sportsgameodds.com. 85+ bookmakers incl. DraftKings, FanDuel, BetMGM, Caesars; 67+ leagues, 28+ sports; REST + WebSocket. API key (paid/trial assumed — verify pricing before use). Odds only, no betting. MEDIUM.
+
+Remaining gaps: Rotten Tomatoes — still no public API; OMDb remains the only lawful route for RT scores. Epic account/library data — no public route; launcher-token catalog only. PlayStation/Xbox account data (trophies, library, purchase history) — no public route; Crawlora wrappers are catalog-only.
+
+---
+
+## 11. Jobs / housing / education / local / dating
+
+### Carried over — still live / useful (9 of 10 grouped entries)
+- **LinkedIn → LinkedIn API** — Sign In/Share free self-serve, Talent/Marketing/Sales partner-gated, NO public job-search endpoint. Job Posting API is for partners to *post* jobs, not retrieve/search them. OAuth 2.0 + partner approval; job search itself requires login on linkedin.com/jobs/search. LOW if approved/partner; HIGH for unofficial scrapers. VERIFIED (Nov 2026 sources: "LinkedIn's own Jobs API is not something you can buy. It sits inside Talent Solutions, requires an approved partnership"; "No free, self-serve public API for job search data"). **Dead sub-component: Proxycurl — shut down permanently Jul 4, 2026 after LinkedIn lawsuit.** Do not list Proxycurl as live.
+- **Indeed → Indeed Job Sync GraphQL + Hiring Lab + Indeed MCP (partner / posting-only)** — Job Sync (GraphQL, ATS/direct employers — available to direct employers per Jul 31, 2026 release notes), Indeed Apply / Disposition Sync / Sponsored Jobs, Hiring Lab aggregated labour-market data. **No public job-search read.** Old Publisher API retired: sign-ups ended 2020, deprecated 2023, endpoint 404 by Oct 2024. Partner approval / Partner Console; MCP route is a signed-in job-seeker connector, not an employer API. LOW (partner, narrow/posting-only). VERIFIED. Gate: logged-out Indeed search now shows page 1 only; page 2 and job pages redirect to sign-in (measured Oct 7, 2026).
+- **Jobs (open) → Greenhouse / Lever public APIs, USAJOBS / Adzuna APIs** — Greenhouse Job Board API — public per-company endpoint, no key for GETs (`boards-api.greenhouse.io`); Lever Postings API — public per-company, no key for GETs; USAJOBS Search API — all US federal jobs, free key by request form, 500 rows/page, 10,000/query, `Authorization-Key` header; Adzuna API — free key, 2,500 calls/month default (250/day, 25/min), 14-day trial for commercial/government/academic use. No login for Greenhouse/Lever GETs; free registration/key for USAJOBS/Adzuna. LOW. VERIFIED (Greenhouse/Lever tested live Oct 12, 2026, returned 18 and 10 postings, no key).
+- **Housing (licensed) → Bridge Interactive / RESO Web API (MLS/broker licence, ~$500/mo, weeks approval); MLS direct/IDX, Spark (~$50/mo/MLS), Trestle, MLS Grid** — RESO Web API feeds of MLS listing data; Bridge is Zillow Group's official replacement for the retired Zillow public API. ~500 MLSs in US, ~90% RESO-certified Web API. MLS affiliation, licence agreement per MLS, approval. LOW if licensed; not a public read. VERIFIED.
+- **Housing (public record) → ATTOM / CoreLogic / HouseCanary / Estated (commercial public-record); RentCast (free tier, rentals); Census ACS API (free enrichment)** — RentCast — rent/value estimates, rental comps, listings, market stats, 140M+ records; free Developer plan 50 requests/month, paid from $74/mo. ATTOM — 30-day trial key. Census ACS — free enrichment. No login for Census ACS; free account/key for RentCast/ATTOM. LOW-MEDIUM depending on licence; public-record data, not portal listings. VERIFIED.
+- **Housing (unofficial) → Zillapi (third-party Zillow wrapper)** — REST wrapper for Zillow property data (search/detail/autocomplete shape), bearer-key JSON, per-credit pricing. No login (API key from vendor, paid). HIGH — unofficial, ToS/copyright risk, breaks without notice. VERIFIED (repo crawled 13 days before Nov 7, 2026; liveness of the vendor endpoint itself not independently live-tested — vendor-claimed; counted in the UNVERIFIED 6 as the Zillapi caveat).
+- **Craigslist jobs/housing → Craigslist RSS (official)** — append `?format=rss` / `.xml` to a search; limited fields, ~120 results/page. Only official read route; no official developer API in 2026. No login. LOW. **VERIFIED per this worker's source ("In 2026, feeds remain unchanged but face rate limits") — CONFLICTS with §6, which found `?format=rss` now returns the HTTP 403 block page and two projects removed their Craigslist RSS connectors in 2026. The §6 evidence is stronger and more specific. Treat Craigslist RSS as DEAD until a live fetch proves otherwise; do not rely on this entry.**
+- **Education → Coursera Affiliate Catalog API + Coursera for Business Partner API; Udemy Business GraphQL Courses/Search API + Instructor API (own courses only)** — Coursera read-only catalog after approval; Udemy Business Courses/Search (partner) + Instructor API (own courses only). Approval / enterprise contract. LOW if gated/partner. **UNVERIFIED — post-merger status not confirmed by a fresh source in this sweep; do not claim live post-merger.** **Change: Coursera completed its combination with Udemy on May 11, 2026** — combined 315,000 courses, ~290M learners, two sites still operating separately, no merged catalog/subscription yet. **Dead sub-component: Udemy Affiliate API v2 — DISCONTINUED Jan 1, 2026** (already noted in existing list; no change).
+- **Nextdoor → Apify actor only (unofficial, HIGH) — no sanctioned route** — public business/city pages only via Apify actor; NOT feeds/groups/private data. No official API ("No, Nextdoor does not offer an API"; "there is no public posting API… Nextdoor has no Graph-API equivalent"). Nextdoor itself is address-verified, login-gated. HIGH — ToS risk, conflicts with scraping ban. **UNVERIFIED — Apify actor's current liveness not re-verified in this sweep; the "no official API" finding is verified.** Trap to avoid: Ur Next Door (urnextdoor.com) is a *different* site with its own API — **not** a Nextdoor client. Do not conflate.
+- **Dating (Tinder / Bumble / Hinge) → NO legitimate public alternative found** — nothing legitimate. No public developer/partner API identified for Hinge (0 APIs). Tinder/Hinge Terms (Tinder effective Mar 5, 2026, Hinge Aug 25, 2025) ban third-party apps/services interacting with the service or member content without written consent, AI included, and ban using/publishing their API without consent; Bumble Terms (updated Jun 17, 2026) ban automations interacting with profiles/messages and scripts/plug-ins that scrape/copy profiles. Unofficial clients (pynder, TinderBot) are login + ToS-violating, NOT recommended. HIGH for any unofficial route (account ban across Match Group affiliates, incl. Tinder/Hinge/OkCupid/Match). VERIFIED (as a confirmed gap).
+
+### New added (14)
+- **Glassdoor → Partner-only API (NEW — was not in existing category section) — VERIFIED (partner-only existence; public API dead).** Partner-only REST API (Partner ID + API key, endpoint cited as api.glassdoor.com/api/api.htm, v1); public access closed 2021, restricted to enterprise partners in 2024; no public docs, no free tier, no developer signup. Partner credentials; logged-out visitors see first page of results only. LOW if partner; HIGH for scrapers (login walls, Cloudflare, anti-bot).
+- **ZipRecruiter → No public API found; site itself live — UNVERIFIED (for API existence).** No official public job-search API identified. Site live with current listings (salary data dated Nov 2–6, 2026). No login for browsing listings; no API to log into. HIGH for any scraper. Absence of evidence, not proof of absence; site liveness verified.
+- **Monster / CareerBuilder → Combined company, both boards live, no public API — VERIFIED (boards live; no public API is a finding, not a live API).** Monster + CareerBuilder combined Sep 2024, filed Chapter 11 June 2025, sale closed Jul 31, 2025 to BOLD; both brands keep running as standalone brands; Monster+ employer pricing 2026 (Standard pay-as-you-go, Pro $299/mo); CareerBuilder employer "Post Job" now routes to Monster hiring. No login for job browsing; employer account for posting/resume search. MEDIUM-HIGH for third-party scrapers.
+- **Zillow → Public API retired; Bridge only — VERIFIED.** Public Web Services API (ZWSID) retired Sep 30, 2021 (sources agree on Sep 30, 2021; one source in the worker return also cites Sep 30, 2026 — treat 2021 as the retirement, per the propertyreach source). Only official path is Bridge Interactive (see above). Zillow Mortgages API is a separate, still-active product. LOW (Bridge, licensed).
+- **Realtor.com → No public API; ListHub syndication (official) + RapidAPI ReefAPI wrapper — VERIFIED for "no public API + ListHub exists"; UNVERIFIED for the "37 endpoints" count.** No Realtor.com-branded developer API. First-party route is ListHub (Move Sales) — RESO-certified syndication feed for publishers, active listings only, no sold/expired/withdrawn, no live querying, publishers must self-host content. Third-party: ReefAPI "Realtor.com Property Data API" on RapidAPI — 7 endpoints (search/autocomplete/detail/estimates/comps/sold/market_trends), BASIC free tier, public data only, no login on user's side; explicitly "Unofficial API. Not affiliated with, endorsed by or sponsored by Realtor.com or Move, Inc." LOW-MEDIUM for ListHub (licensed syndication); MEDIUM-HIGH for RapidAPI wrapper (unofficial, ToS risk). The "37 endpoints, free tier" claim is a vendor-blog claim, UNVERIFIED against primary docs (as already flagged in the Nov 1 list).
+- **Trulia → No API — VERIFIED (as a confirmed gap; site itself live).** No public API. Zillow-owned; shares Zillow data/stack; differentiator is neighbourhood data (crime, commute, noise, local reviews). HIGH for scrapers (Imperva stack shared with Zillow).
+- **Redfin → No listings API; Redfin Data Center free downloads — VERIFIED.** No public listings API, no developer program. Official free route: Redfin Data Center — aggregate housing-market datasets (median sale price, homes sold, new listings, inventory, days on market, price drops, cancellations) by nation/metro/county/city/ZIP/neighbourhood, downloadable TSV/CSV, no per-property listings. Redfin acquired by Rocket Companies Jul 1, 2026. No login for Data Center downloads. LOW (official aggregate data); HIGH for unofficial listing scrapers (ToS prohibits scraping).
+- **Apartments.com → No API; Digital Feeds Program only — VERIFIED (as a confirmed gap).** No developer portal, OpenAPI, SDK, webhooks, or Postman collection; developer.* / docs.* subdomains do not resolve; api.apartments.com returns HTTP 403 to non-browser requests. Only machine-to-machine seam: Digital Feeds Program — approved third-party feed vendor syndicates a paying advertiser's listings via FTP/XML, spec on request to Feeds@apartments.com. Approval + contract for Feeds Program; no public read API. HIGH for any scraper (Akamai 403, ToS).
+- **CoStar → No public API — VERIFIED (as a confirmed gap).** No self-serve developer portal, public OAuth, REST catalog, SDKs, or webhooks for CoStar Suite / COMPS / Market Analytics / LoopNet. Terms of Use explicitly prohibit automated extraction/scraping/robots/data-mining; CoStar has sued competitors/customers (CREXi, Xceligent, etc.) over automated access. Paid CoStar subscription, browser/app only. HIGH for any unofficial access (litigation history).
+- **Chegg → No public API found; site live but in steep decline — UNVERIFIED (for API existence).** No public developer API identified. Site (chegg.com) is live with homework-help content. Context: Chegg revenue fell 51% YoY in Q2 2026 attributed to ChatGPT; stock ~$0.78, −99% over 5 years; pivoting to a next-generation platform (job search/matching/coaching, planned Q3 2026 launch). Paid subscription for Chegg Study content. HIGH for scrapers.
+- **JSearch (RapidAPI) → Google for Jobs wrapper covering Indeed / ZipRecruiter / Glassdoor / LinkedIn — VERIFIED.** jsearch.p.rapidapi.com/search. Returns Google for Jobs results as unified JSON: job_title, employer_name, job_country, description, apply link, job_publisher. Free plan 200 requests/month, no card; paid $25/mo for 10,000 requests up to $150/mo for 200,000. No ATS coverage, no dedup (same job appears 3×), salary is unparsed free text, no webhooks. No login (RapidAPI key, free tier). MEDIUM-HIGH — third-party SERP wrapper, ToS risk on underlying boards, RapidAPI ~30% markup.
+- **JobsPipe → Aggregated jobs API, 30+ sources — VERIFIED.** jobspipe.dev. LinkedIn, Indeed, Workday, Greenhouse, Lever, Ashby, SmartRecruiters, Workable, etc. (one schema, deduplicated). POST /v1/jobs/search, normalized postings, structured salary, dedup across sources. Free tier 1,000 jobs to start; paid from $49/mo for 25,000 jobs. Does NOT carry Glassdoor reviews or USAJOBS. No login for sandbox; API key for production. MEDIUM — commercial aggregator, check redistribution/licence terms per use.
+- **The Muse / RemoteOK / Remotive / Arbeitnow → Keyless free job feeds — VERIFIED.** The Muse — themuse.com/api/public/jobs, 500 req/hr unregistered, 3,600/hr registered, 20/page, filter by company/category/level/location, registration required beyond testing. RemoteOK — remoteok.com/api, keyless JSON + RSS, salary_min/max, attribution (followed link) required, first array element is a legal notice, skip index 0. Remotive — remotive.com/api/remote-jobs, keyless, remote worldwide, 24h delay, >2 req/min blocked, ~4 req/day advised, no redistribution to other job sites. Arbeitnow — arbeitnow.com/api/job-board-api, keyless, Europe/Germany focus, visa-sponsorship flag, separate UK endpoint. No login (The Muse: free key optional/raises limit). LOW (public, sanctioned feeds — honour attribution/rate limits).
+- **Ashby → Public Posting API — VERIFIED.** api.ashbyhq.com/posting-api. Public job-board endpoint, no key for GETs, can include compensation with `includeCompensation=true`. One employer per call, like Greenhouse/Lever. No login for GETs. LOW.
+
+Hard gates confirmed: LinkedIn job search login wall; Indeed page-2/job-page sign-in wall (Oct 7, 2026); Glassdoor login/Cloudflare; Apartments.com Akamai 403 on all non-browser requests; CoStar ToS + litigation history; dating apps' 2026 terms explicitly banning AI/third-party tools.
+
+---
+
+## Reconciliation notes (coordinator)
+
+- **Craigslist RSS conflict:** §6 (Shopping) found native RSS DEAD (403 block page; Nagus removed its connector July 2026; Rentwise switched May 2026). §11 (Jobs) reported it VERIFIED from a source saying "In 2026, feeds remain unchanged". The §6 evidence is stronger and more specific (a live 403 + two independent projects). This file records RSS as DEAD and flags the conflict in both sections. Re-test with a live fetch before re-listing.
+- **Zillow public API retirement date:** §11's sources cite both Sep 30, 2021 and Sep 30, 2026. The propertyreach source (the primary citation) says 2021. Recorded as 2021, with the conflict noted.
+- **Kalshi host:** old `api.elections.kalshi.com` is superseded by `external-api.kalshi.com` per Oct 2026 sources — update the Nov 1 entry, don't keep both.
+- **Steam reviews:** update the Steam entry to the new `IUserReviewsService` endpoint; old `appreviews` endpoint is dead as of Oct 22, 2026.
+- **NTPrices v1:** retires Dec 1, 2026 — only v2 should be listed going forward.
+- **EIA:** now VERIFIED — remove its UNVERIFIED flag from the Nov 1 list.
+- **FPL / Duke Energy Florida Green Button:** correct the Nov 1 list — both do NOT offer it; only Duke Progress NC (planned Jan 2027) and PPL/Duke other jurisdictions do.
+- **CaseAccess:** launched Oct 12, 2026 at $20/mo / $200/yr (not just "paid").
+- **CourtListener:** free API limits tightened May 2026 (125/day).
+- **PACER fee:** rises $0.10 → $0.12/page Jan 1, 2027; quarterly exemption $30 → $40.
+- **Stripe MCP:** Agent-tagged keys / OAuth only from Oct 31, 2026; full-access keys rejected from Dec 2026.
+- **Google Custom Search JSON API:** ends Jan 1, 2027 (successor: Vertex AI Search). **Bing Search API:** retired Aug 11, 2025.
+- **Brave Search API free tier:** changed Feb 12, 2026 (2,000/mo → $5/mo credit, ~1,000 searches).
+- **Reddit:** RSS dies Nov 13, 2026; all public API ends March 2027; logged-in-only tests Q4 2026 outside US. Redlib and Reddit clients are living on borrowed time.
+- **Counts caveat:** category totals sum worker returns; the same client appears in multiple categories (Discord, TikTok, Twitch, Substack, etc.), and workers counted grouped bullets vs sub-entries differently. The ~372 figure is a sum of returns, not a deduplicated unique-client count. UNVERIFIED ~72 is a sum of flags, not a count of unique unverified clients.
+
+## Sources / method
+
+- Starting point: `~/workspace/access-clients/SUMMARY.md`, `01-blocked-sites.md`, `02-existing-clients.md` (Nov 1, 2026).
+- 11 category workers, one per category, each starting from the Nov 1 section for its category, re-checking via web search (browser.search / browser.open) Nov 7, 2026. No live-browser verification was done (subagent restriction). No Redlib instance was pinged directly. No Prism News used. No workers.dev URL listed as a client.
+- Full worker reports were delivered to the coordinator in this session; this file is the coordinator's reconciliation of those 11 reports. Where two workers conflicted (Craigslist RSS, Zillow retirement date), the conflict is flagged in place rather than silently resolved.
+- Existing files were NOT overwritten. This is a new file only.
+
+# Client sites — simple list
+
+One line per client: Client — for Site — URL. Live usable ones only. From the Nov 7, 2026 refresh. Full details in 02-existing-clients-browser-refresh-2026-11-07.md.
+
+## 1. Reddit & forums
+- Redlib — for Reddit — redlib-1.privadency.com
+- Stack Exchange API — for Stack Overflow — api.stackexchange.com
+- 4chan JSON API — for 4chan — a.4cdn.org
+- Hacker News API — for Hacker News — hacker-news.firebaseio.com
+- Lemmy API — for Lemmy — lemmy.world
+- Discord Bot API — for Discord — discord.com/developers
+- Desuarchive — for 4chan — desuarchive.org
+- Quetre — for Quora — quetre.iket.me
+- PieFed — for forums — piefed.social
+- Discuit — for forums — discuit.net
+- RedReader — for Reddit — github.com/QuantumBadger/RedReader
+- SafeReddit — for Reddit — safereddit.com
+
+## 2. Social
+- Bluesky Public API — for Bluesky — public.api.bsky.app
+- Mastodon API + RSS — for Mastodon — mastodon.social
+- X Official API — for X — developer.x.com
+- FxTwitter — for X — fxtwitter.com
+- X oEmbed — for X — publish.twitter.com/oembed
+- Meta Graph API — for Instagram / Facebook / Threads — graph.facebook.com
+- Imginn — for Instagram — imginn.com
+- Urlebird — for TikTok — urlebird.com
+- ReefAPI — for Threads — reefapi.com
+- Nitter — for X — nitter.netbub.com
+- Pixelfed — for Instagram alternative — pixelfed.org
+- Primal — for Nostr — primal.net
+
+## 3. Video / music
+- YouTube Data API — for YouTube — developers.google.com/youtube/v3
+- YouTube oEmbed — for YouTube — youtube.com/oembed
+- Invidious — for YouTube — invidious.io
+- Piped — for YouTube — piped.video
+- yt-dlp — for YouTube — github.com/yt-dlp/yt-dlp
+- Twitch Helix API — for Twitch — dev.twitch.tv
+- Vimeo API — for Vimeo — developer.vimeo.com
+- TMDB API — for movies / TV metadata — themoviedb.org
+- Spotify Web API — for Spotify — developer.spotify.com
+- SoundCloud API — for SoundCloud — developers.soundcloud.com
+- Dailymotion Data API — for Dailymotion — api.dailymotion.com
+- Grayjay — for YouTube / Twitch / etc — grayjay.app
+
+## 4. Finance
+- Plaid — for banks — plaid.com
+- Schwab Trader API — for Schwab — developer.schwab.com
+- SnapTrade — for brokerages — snaptrade.com
+- Robinhood Crypto API — for Robinhood crypto — docs.robinhood.com
+- PayPal API — for PayPal — developer.paypal.com
+- Square API — for Cash App merchant — developer.squareup.com
+- Stripe API — for Stripe — api.stripe.com
+
+## 5. News / search
+- NYT API — for NYT — developer.nytimes.com
+- Guardian Open Platform — for Guardian — open-platform.theguardian.com
+- Substack RSS — for Substack — substack.com/feed
+- Google News RSS — for Google News — news.google.com/rss
+- Brave Search API — for search — brave.com/search/api
+- NewsAPI — for news — newsapi.org
+- GDELT — for news data — gdeltproject.org
+- Internet Archive — for archives — web.archive.org
+- BBC RSS — for BBC — feeds.bbci.co.uk
+- NPR RSS — for NPR — npr.org
+
+## 6. Shopping / travel
+- eBay API — for eBay — developer.ebay.com
+- Etsy API — for Etsy — developer.etsy.com
+- Shopify Storefront API — for Shopify — shopify.dev
+- Inside Airbnb — for Airbnb data — insideairbnb.com
+- Ticketmaster Discovery API — for Ticketmaster — developer.ticketmaster.com
+
+## 7. Developer / cloud
+- GitHub API — for GitHub — api.github.com
+- GitLab API — for GitLab — gitlab.com/api/v4
+- npm registry — for npm — registry.npmjs.org
+- Hugging Face API — for Hugging Face — huggingface.co
+- Ollama — for local models — ollama.com
+- Cloudflare API — for Cloudflare — developers.cloudflare.com
+
+## 8. Government / courts / health
+- CourtListener — for courts — courtlistener.com
+- govinfo — for federal docs — govinfo.gov
+- Justia — for dockets — dockets.justia.com
+- IRS TEOS — for nonprofits — irs.gov/charities-non-profits/tax-exempt-organization-search
+- ProPublica Nonprofit Explorer — for nonprofits — projects.propublica.org/nonprofits
+- openFDA — for FDA — api.fda.gov
+- ClinicalTrials.gov API — for trials — clinicaltrials.gov
+- CMS open data — for Medicare / Medicaid — data.cms.gov
+
+## 9. Messaging / creator
+- Telegram Bot API — for Telegram — core.telegram.org/bots/api
+- Slack API — for Slack — api.slack.com
+- Gmail API — for Gmail — developers.google.com/gmail/api
+- Patreon API — for Patreon — docs.patreon.com
+- DeviantArt API — for DeviantArt — developers.deviantart.com
+- Gumroad API — for Gumroad — api.gumroad.com
+- Substack API — for Substack — substack.com
+
+## 10. Gaming / sports
+- Steam Web API — for Steam — api.steampowered.com
+- SteamDB — for Steam — steamdb.info
+- IGDB — for games — api.igdb.com
+- The Odds API — for sports odds — the-odds-api.com
+- Polymarket Gamma API — for Polymarket — gamma-api.polymarket.com
+- Kalshi API — for Kalshi — kalshi.com
+- ESPN API — for ESPN — site.api.espn.com
+- IMDb Datasets — for IMDb — datasets.imdbws.com
+- OMDb API — for IMDb / Rotten Tomatoes — omdbapi.com
+
+## 11. Jobs / housing / education
+- LinkedIn API — for LinkedIn — developer.linkedin.com
+- Greenhouse API — for jobs — boards-api.greenhouse.io
+- USAJOBS API — for federal jobs — developer.usajobs.gov
+- Adzuna API — for jobs — developer.adzuna.com
+
+Total: 92 clients.
+

@@ -1,0 +1,123 @@
+Footer layout FED-OS
+
+Explore the Ecosystem: https://www.fedpromptly.org
+
+Join FED-OS Membership: https://www.fedpromptly.com/aid
+
+Storefront: https://www.jabburr.com/fed-os
+
+Whop: https://whop.com/fedpromptly/
+
+Contact
+
+General: contact@fedpromptly.com
+
+Support: support@fedpromptly.com
+
+Business: business@fedpromptly.com
+
+Careers: careers@fedpromptly.com
+
+Support & Media
+
+Supporters: https://www.patreon.com/c/FEDpromptly
+
+Tips / Donations: https://buymeacoffee.com/fedpromptly
+
+Articles: https://substack.com/@fedpromptly
+
+Blog Post: https://fedpromptly.wordpress.com/
+
+GitFed Blog: https://gitfed.substack.com/
+
+Personal Substack: https://substack.com/@gitfed
+
+Community & Social
+
+Developers: https://discord.gg/Jm4XStx4Pf
+
+Friends: https://facebook.com/fedpromptly
+
+Social Media: https://bsky.app/profile/fed-os.bsky.social
+
+Advertisement / X: https://x.com/Fedpromptly
+
+Artwork: https://www.deviantart.com/fedpromptly
+
+Private Matrix (18+): https://matrix.to/#/#fed-os:matrix.org
+
+Private Matrix note: 18+ confirmation required. Available only to residents of Canada, Switzerland, Russia, Iran, Somalia, and Turkmenistan.
+
+Visibility labels Label Meaning Footer? Public Anyone can click, no login Yes Premium / Member Public landing page, but content/access is paid or logged-in Yes, as a teaser link Private / Restricted Invite, 18+, country-locked, or personal No — put behind a gate Internal Not for public navigation No What goes where Item URL Where it belongs Explore Ecosystem https://www.fedpromptly.org Public footer Join FED-OS Membership https://www.fedpromptly.com/aid Public footer → member area is private Storefront https://www.jabburr.com/fed-os Public footer Whop https://whop.com/fedpromptly/ Public footer → paid products are premium Contact contact@fedpromptly.com Public footer Support support@fedpromptly.com Public footer Business business@fedpromptly.com Public footer / contact page Careers careers@fedpromptly.com Public footer only if hiring Patreon https://www.patreon.com/c/FEDpromptly Public footer → tiers are premium Tips / Donations https://buymeacoffee.com/fedpromptly Public footer Advertisement / X https://x.com/Fedpromptly Public footer if you sell ads Articles https://substack.com/@fedpromptly Public footer Blog https://fedpromptly.wordpress.com/ Public footer GitFed Blog https://gitfed.substack.com/ Public footer if official Personal Substack https://substack.com/@gitfed Not footer — put in author bio or personal page Developers Discord https://discord.gg/Jm4XStx4Pf Public invite → private channels gated Friends / Facebook https://facebook.com/fedpromptly Public footer Bluesky https://bsky.app/profile/fed-os.bsky.social Public footer Artwork https://www.deviantart.com/fedpromptly Public footer Private Matrix https://matrix.to/#/#fed-os:matrix.org Private/restricted — do NOT put in footer Recommended public footer FED-OS
+
+https://www.fedpromptly.org
+
+https://www.fedpromptly.com/aid
+
+https://www.jabburr.com/fed-os
+
+https://whop.com/fedpromptly/
+
+Contact
+
+contact@fedpromptly.com
+
+support@fedpromptly.com
+
+business@fedpromptly.com
+
+careers@fedpromptly.com
+
+Media
+
+https://substack.com/@fedpromptly
+
+https://fedpromptly.wordpress.com/
+
+https://gitfed.substack.com/
+
+https://www.deviantart.com/fedpromptly
+
+https://bsky.app/profile/fed-os.bsky.social
+
+https://x.com/Fedpromptly
+
+https://facebook.com/fedpromptly ( skip )
+
+Support
+
+https://www.patreon.com/c/FEDpromptly
+
+https://buymeacoffee.com/fedpromptly
+
+https://discord.gg/Jm4XStx4Pf
+
+What should be gated Put these behind login, membership, age, geo, or invite:
+
+FED-OS member dashboard
+
+Whop paid products
+
+Patreon premium tiers
+
+Discord private channels
+
+Private Matrix room
+
+Personal Substack if it’s not official
+
+Matrix rule Do not put this in the main footer:
+
+https://matrix.to/#/#fed-os:matrix.org
+
+Instead, link to a “Private Communities” page that:
+
+Warns 18+
+
+Requires a checkbox confirmation
+
+Checks country eligibility
+
+Then reveals the Matrix link
+
+So the footer stays clean and public. Premium links are fine as landing pages. Private links go behind a gate. Personal/internal links stay out entirely.
